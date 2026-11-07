@@ -4,7 +4,7 @@
 > 先聚焦 design，后续再扩到其他方向。
 > 仓库：https://github.com/jaxxchen003/awesome-codex-skills
 
-📊 **收录 skill：24** ｜ 🕐 **最后更新：2026-11-08** ｜ 🤖 每日定时更新
+📊 **收录 skill：24** ｜ 🕐 **最后更新：2026-11-08** ｜ 🤖 每日定时更新 ｜ 🌐 **在线预览站：https://jaxxchen003.github.io/awesome-codex-skills/**
 
 ---
 

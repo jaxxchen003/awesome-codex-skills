@@ -4,7 +4,7 @@
 > 先聚焦 design，后续再扩到其他方向。
 > 仓库：https://github.com/jaxxchen003/awesome-codex-skills
 
-📊 **收录 skill：24** ｜ 🕐 **最后更新：2026-11-08** ｜ 🤖 每日定时更新 ｜ 🌐 **在线预览站：https://jaxxchen003.github.io/awesome-codex-skills/**
+📊 **收录 skill：28** ｜ 🕐 **最后更新：2026-11-09** ｜ 🤖 每日定时更新 ｜ 🌐 **在线预览站：https://jaxxchen003.github.io/awesome-codex-skills/**
 
 ---
 
@@ -23,13 +23,13 @@
 - **生图 / 生视频要拆口径：** 分“代码生成”（SVG / HTML / Remotion 渲染，不调图片视频模型）和“模型生成”（调 Nano Banana / gpt-image / Veo / Sora 等）两类，入库时标注清楚，不混着说。
 - **Stars 口径：** 文中 stars 均为 2026-11-08 GitHub API / 仓库页核验值；合集型仓库的 stars 是整个仓库的，不是单个 skill 的，已注明。
 
-> Reddit 线本轮覆盖缺口（诚实说明）：2026-11-08 实测 r/ChatGPTCoding、r/OpenAI、r/ClaudeAI、r/webdev、r/Design 的 new RSS 全部 429 / 403，Arctic Shift 备用也失败，本轮无任何一条 Reddit 原帖直链，未编造。下轮换时段复扫。
+> Reddit 线本轮覆盖缺口（诚实说明）：2026-11-09 实测 r/ChatGPTCoding、r/OpenAI、r/ClaudeAI、r/webdev、r/Design 的 new RSS 两次尝试全部 403，本轮仍无任何一条 Reddit 原帖直链，未编造。X 线：agent-reach CLI 本轮无法运行（不在 PATH，Python 入口缺 loguru 依赖），改用 web search 扫 X 相关新帖，未发现过去 24 小时内新发布的 design skill 原帖。
 
 ---
 
 ## 📑 目录
 
-- [🌐 网页设计](#-网页设计)（13）
+- [🌐 网页设计](#-网页设计)（17）
 - [🖼️ 生图](#️-生图)（4）
 - [🎬 生视频](#-生视频)（7）
 - [🤝 参与方式](#-参与方式)
@@ -130,6 +130,34 @@
 - **仓库**：https://github.com/openai/skills（28,579★，全仓库）
 - **一句话**：OpenAI 官方 Codex 前端 skill：无卡片布局、全幅 hero、品牌优先层级、克制动效、≤2 字体 + 1 强调色。
 - **备注**：SKILL.md 路径本轮因 GitHub API 限流未核验，下轮补。
+
+### 25. Liquid-Glass-Skill — 交互式液态玻璃控件 🟡
+- **作者**：EVEDensity
+- **仓库**：https://github.com/EVEDensity/Liquid-Glass-Skill（4★，MIT，2026-11-09 GitHub Search API 核验；创建 2026-11-03，2026-11-08 更新）
+- **一句话**：设计折射按钮、开关、滑杆、分段控件等液态玻璃控件：本地编辑器调形状 / 文字 / 图标 / 材质，Copy for AI 粘贴进 agent 落到现有页面，支持 Codex 与 Claude Code。
+- **参考视频**：README 18 秒产品演示 https://github.com/user-attachments/assets/9c0b9150-876c-46cf-9f29-7a22a7e907b4 ；4K MP4：https://github.com/EVEDensity/Liquid-Glass-Skill/raw/refs/heads/main/docs/media/liquid-glass-ui-demo.mp4
+- **类型**：代码生成（CSS glass / WebGL2 折射，不调图片模型）
+
+### 26. premium-frontend-director — 高端前端艺术指导 🟡
+- **作者**：AVL05
+- **仓库**：https://github.com/AVL05/premium-frontend-director（0★，MIT，2026-11-09 核验；创建 2026-11-04，2026-11-08 更新；`skills/premium-frontend-director/SKILL.md`）
+- **一句话**：把创意简报变成有艺术指导的独特前端：创意方向提案 → 现有框架落地 → 浏览器实查 → 证据优先交接，Codex / Claude Code 可用。
+- **参考图/视频**：官网 Showcase（独立电影感展示站）：https://the-art-of-direction.netlify.app
+- **类型**：网页设计
+
+### 27. variant-design-skill — 一份简报出三个设计方向 🟡
+- **作者**：YuqingNicole
+- **仓库**：https://github.com/YuqingNicole/variant-design-skill（47★，2026-11-09 核验；创建 2026-03-11，2026-11-08 更新；根目录 SKILL.md）
+- **一句话**：同一份简报在项目内生成 A/B/C 三个完整可比的设计方向，各有取舍说明，改动先快照、可回滚；另含设计系统、组件、UX 评审等路由。
+- **参考图**：README 三张示例图（assets/sample-A-editorial.png 等）；A/B/C 案例站：https://variant-design-skill.vercel.app/cases
+- **类型**：代码生成
+
+### 28. diagram-design — 品牌级图表 / 信息图 🟡
+- **作者**：cathrynlavery
+- **仓库**：https://github.com/cathrynlavery/diagram-design（65,818★，MIT，2026-11-09 GitHub Search API 核验；创建 2026-04-16，2026-11-08 更新；`skills/diagram-design/SKILL.md`）
+- **一句话**：45 种图表类型画成品牌一致的自包含 HTML+SVG 单文件（不用 Mermaid 糙图），支持 Codex / Claude Code，附品牌 token 注册表。
+- **参考图**：README hero 图 + 截图画廊；官网 https://diagramdesign.dev ；画廊站 https://cathrynlavery.github.io/diagram-design/
+- **类型**：代码生成（HTML+SVG）
 
 ---
 
@@ -232,6 +260,9 @@
 - **Hypit**：agentsuses 22.3k★、1:03 视频，但源头仓库作者未点开确认，源头待追溯。
 - **Superdesign / Mowgli**：仅单站提及，stars、仓库页、demo 均未核验。
 - **video-generation / video-director**：SKILL.md 页面此前可抓取，但 GitHub Search API 两次无返回，可能改名 / 删库，收录前须人工点开复核。
+- **ai-ready-sites**（tsvetaeff-den，创建 2026-11-08）：SKILL.md 已核验（`skills/ai-ready-sites/SKILL.md`，Apache-2.0，明确支持 Codex），但 README 全文（8,959 字）无任何参考图 / 视频（仅 CI badge），按铁律暂不入库，待作者补 demo 后再收。
+- **ui-review-loop**（millxing，创建 2026-11-08）：SKILL.md 已核验（根目录，明确支持 Codex，多评审人打分 + 问题台账），但 README 无参考图 / 视频，暂不入库，待作者补 demo 后再收。
+- **ai-skills-marketplace**（T-Sunm，创建 2026-11-08）：合集型仓库，非单个 design skill，不入库。
 
 ## 发现源（只作线索，不当来源）
 
@@ -257,4 +288,4 @@
 
 ---
 
-*核验日期：2026-11-08。每日定时更新：新增 skill 经核验后入库，0 新增也汇报当日扫描情况。*
+*核验日期：2026-11-09。每日定时更新：新增 skill 经核验后入库，0 新增也汇报当日扫描情况。*

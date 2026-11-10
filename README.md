@@ -4,7 +4,7 @@
 > 先聚焦 design，后续再扩到其他方向。
 > 仓库：https://github.com/jaxxchen003/awesome-codex-skills
 
-📊 **收录 skill：28** ｜ 🕐 **最后更新：2026-11-09** ｜ 🤖 每日定时更新 ｜ 🌐 **在线预览站：https://jaxxchen003.github.io/awesome-codex-skills/**
+📊 **收录 skill：30** ｜ 🕐 **最后更新：2026-11-10** ｜ 🤖 每日定时更新 ｜ 🌐 **在线预览站：https://jaxxchen003.github.io/awesome-codex-skills/**
 
 ---
 
@@ -23,15 +23,15 @@
 - **生图 / 生视频要拆口径：** 分“代码生成”（SVG / HTML / Remotion 渲染，不调图片视频模型）和“模型生成”（调 Nano Banana / gpt-image / Veo / Sora 等）两类，入库时标注清楚，不混着说。
 - **Stars 口径：** 文中 stars 均为 2026-11-08 GitHub API / 仓库页核验值；合集型仓库的 stars 是整个仓库的，不是单个 skill 的，已注明。
 
-> Reddit 线本轮覆盖缺口（诚实说明）：2026-11-09 实测 r/ChatGPTCoding、r/OpenAI、r/ClaudeAI、r/webdev、r/Design 的 new RSS 两次尝试全部 403，本轮仍无任何一条 Reddit 原帖直链，未编造。X 线：agent-reach CLI 本轮无法运行（不在 PATH，Python 入口缺 loguru 依赖），改用 web search 扫 X 相关新帖，未发现过去 24 小时内新发布的 design skill 原帖。
+> Reddit 线本轮覆盖缺口（诚实说明）：2026-11-10 实测 r/ChatGPTCoding、r/OpenAI、r/ClaudeAI 的 new RSS 正常取到，未发现 design skill 新帖；r/webdev、r/Design 两次尝试均 429，本轮仍无任何一条 Reddit 原帖直链，未编造。X 线：web search 扫 X 相关新帖，未发现过去 24 小时内新发布的 design skill 原帖；GitHub Search 本轮 12 个新建仓库中 2 条入库，其余因无参考图/视频或不在收录范围暂缓。
 
 ---
 
 ## 📑 目录
 
-- [🌐 网页设计](#-网页设计)（17）
+- [🌐 网页设计](#-网页设计)（18）
 - [🖼️ 生图](#️-生图)（4）
-- [🎬 生视频](#-生视频)（7）
+- [🎬 生视频](#-生视频)（8）
 - [🤝 参与方式](#-参与方式)
 - [⚠️ 免责声明](#️-免责声明)
 
@@ -159,6 +159,14 @@
 - **参考图**：README hero 图 + 截图画廊；官网 https://diagramdesign.dev ；画廊站 https://cathrynlavery.github.io/diagram-design/
 - **类型**：代码生成（HTML+SVG）
 
+### 29. nordic-civic-design-skill — 赫尔辛基设计系统公共服务网页 skill 🟡
+- **作者**：capsrock
+- **仓库**：https://github.com/capsrock/nordic-civic-design-skill（1★，2026-11-10 GitHub Search API 核验；创建 2026-11-09；根目录 SKILL.md）
+- **一句话**：以赫尔辛基设计系统（HDS 6.0.7）为底的公共服务网页设计 skill：直角、强色、大留白，含现成设计 token，明确支持 Codex。
+- **参考图**：README 三张示例图——首页 https://raw.githubusercontent.com/capsrock/nordic-civic-design-skill/main/assets/jp/home.png ；申请表单 https://raw.githubusercontent.com/capsrock/nordic-civic-design-skill/main/assets/jp/form.png ；管理后台 https://raw.githubusercontent.com/capsrock/nordic-civic-design-skill/main/assets/jp/table.png
+- **类型**：代码生成（设计系统 token）
+- **备注**：非官方 skill，README 已声明与赫尔辛基市无关、不得冒用市徽与 logo。
+
 ---
 
 ## 🖼️ 生图
@@ -251,6 +259,13 @@
 - **参考图**：原帖附图 https://pbs.twimg.com/media/HVlMzI1b0AA-sgn.png?name=orig ；视频演示见第 4 条原帖
 - **类型**：代码生成
 
+### 30. idea-to-motion — 一句话想法变带配乐旁白的动效视频 🟡
+- **作者**：Georges MOMO（georgesmomo）
+- **仓库**：https://github.com/georgesmomo/idea-to-motion（0★，2026-11-10 核验；创建 2026-11-09；`skills/idea-to-motion/SKILL.md`，MIT）
+- **一句话**：一句话想法变成带 3D、动效、配乐、旁白的动效视频：14 种风格、16 种体裁，本地渲染、零 API key，明确支持 Codex。
+- **参考视频**：README 顶部 showreel GIF + 7 条演示视频：showreel https://github.com/user-attachments/assets/ff0efe82-d710-40fd-a3be-fa134350524c ；40 秒宇宙科普 https://github.com/user-attachments/assets/9be14847-9370-47bb-9f0e-73bf7f1c15cf ；AURA 产品发布片 https://github.com/user-attachments/assets/3c8a7350-aa9d-4ab6-a800-2d3ff7da92e3
+- **类型**：代码生成（HyperFrames + three.js + GSAP 渲染，无图片模型）
+
 ---
 
 ## 暂不收录（已查到，缺源头或未核验）
@@ -263,6 +278,11 @@
 - **ai-ready-sites**（tsvetaeff-den，创建 2026-11-08）：SKILL.md 已核验（`skills/ai-ready-sites/SKILL.md`，Apache-2.0，明确支持 Codex），但 README 全文（8,959 字）无任何参考图 / 视频（仅 CI badge），按铁律暂不入库，待作者补 demo 后再收。
 - **ui-review-loop**（millxing，创建 2026-11-08）：SKILL.md 已核验（根目录，明确支持 Codex，多评审人打分 + 问题台账），但 README 无参考图 / 视频，暂不入库，待作者补 demo 后再收。
 - **ai-skills-marketplace**（T-Sunm，创建 2026-11-08）：合集型仓库，非单个 design skill，不入库。
+- **unslop-frontend-design**（rldzkl，创建 2026-11-09）：改写自 Anthropic frontend-design 的反 AI 味前端 skill，SKILL.md 已核验、明确支持 Codex，但 README 全文无任何参考图 / 视频（唯一视频链接是致谢里的 TikTok 原视频，非本 skill 演示），按铁律暂不入库，待作者补 demo 后再收。
+- **systra-taste**（systra-tools，创建 2026-11-09）：三合一设计品味 skill（build / review / repair），SKILL.md 已核验、明确支持 Codex，但 README 唯一图片是 skills.sh 徽章，示例文档（hero-repair / review-report）也无任何参考图 / 视频，暂不入库。
+- **design-skills-pack-en**（nattagidgig-hash，创建 2026-11-09）：9 个 UI/UX design skill 合集，README 无参考图 / 视频，暂不入库。
+- **atelier-ui**（caicaichuangzhao，创建 2026-11-09）、**claude-code-ui-design**（inchwormz，创建 2026-11-09）、**website-builder-toolkit**（tobiashaas，创建 2026-11-09）、**design-director**（romanroff，创建 2026-11-09）：SKILL.md 已核验、均明确支持 Codex，但 README 均无参考图 / 视频，暂不入库。
+- **am-will/codex-skills 的 frontend-design**：合集型仓库，内含的 frontend-design 系直接导入 Anthropic 官方版（本库第 6 条已收），不重复收录。
 
 ## 发现源（只作线索，不当来源）
 
@@ -288,4 +308,4 @@
 
 ---
 
-*核验日期：2026-11-09。每日定时更新：新增 skill 经核验后入库，0 新增也汇报当日扫描情况。*
+*核验日期：2026-11-10。每日定时更新：新增 skill 经核验后入库，0 新增也汇报当日扫描情况。*

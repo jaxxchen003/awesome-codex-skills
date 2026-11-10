@@ -4,7 +4,7 @@
 > 先聚焦 design，后续再扩到其他方向。
 > 仓库：https://github.com/jaxxchen003/awesome-codex-skills
 
-📊 **收录 skill：30** ｜ 🕐 **最后更新：2026-11-10** ｜ 🤖 每日定时更新 ｜ 🌐 **在线预览站：https://jaxxchen003.github.io/awesome-codex-skills/**
+📊 **收录 skill：34** ｜ 🕐 **最后更新：2026-11-11** ｜ 🤖 每日定时更新 ｜ 🌐 **在线预览站：https://jaxxchen003.github.io/awesome-codex-skills/**
 
 ---
 
@@ -23,13 +23,13 @@
 - **生图 / 生视频要拆口径：** 分“代码生成”（SVG / HTML / Remotion 渲染，不调图片视频模型）和“模型生成”（调 Nano Banana / gpt-image / Veo / Sora 等）两类，入库时标注清楚，不混着说。
 - **Stars 口径：** 文中 stars 均为 2026-11-08 GitHub API / 仓库页核验值；合集型仓库的 stars 是整个仓库的，不是单个 skill 的，已注明。
 
-> Reddit 线本轮覆盖缺口（诚实说明）：2026-11-10 实测 r/ChatGPTCoding、r/OpenAI、r/ClaudeAI 的 new RSS 正常取到，未发现 design skill 新帖；r/webdev、r/Design 两次尝试均 429，本轮仍无任何一条 Reddit 原帖直链，未编造。X 线：web search 扫 X 相关新帖，未发现过去 24 小时内新发布的 design skill 原帖；GitHub Search 本轮 12 个新建仓库中 2 条入库，其余因无参考图/视频或不在收录范围暂缓。
+> Reddit 线本轮无缺口：2026-11-11 实测 r/ChatGPTCoding、r/OpenAI、r/ClaudeAI、r/webdev、r/Design 的 new RSS 全部 200 取到，未发现 design skill 新帖；r/ClaudeAI 一条“Opus 5.5 vs $2,000 motion design”帖为动效作品对比、非 skill，不入库。X 线：web search 未发现过去 24 小时内新发布的 design skill 原帖。GitHub Search 本轮 20 余个候选仓库中 4 条入库（neopop、cloudmamba、digital-go 补录、LottieFiles motion-design 追溯），其余因无参考图/视频、未提及 Codex 或不在收录范围暂缓。skills.sh 首页未见今晚候选的新上架条目；agentsuses / open-design.ai / SkillsMP 未发现新增 design skill。
 
 ---
 
 ## 📑 目录
 
-- [🌐 网页设计](#-网页设计)（18）
+- [🌐 网页设计](#-网页设计)（22）
 - [🖼️ 生图](#️-生图)（4）
 - [🎬 生视频](#-生视频)（8）
 - [🤝 参与方式](#-参与方式)
@@ -167,6 +167,38 @@
 - **类型**：代码生成（设计系统 token）
 - **备注**：非官方 skill，README 已声明与赫尔辛基市无关、不得冒用市徽与 logo。
 
+### 31. neopop-design-skill — CRED NeoPOP 设计语言 UI skill 🟡
+- **作者**：Satyam085
+- **仓库**：https://github.com/Satyam085/neopop-design-skill（0★，Apache-2.0，2026-11-11 核验；创建 2026-11-10；`neopop-design/SKILL.md`）
+- **一句话**：教 agent 用 CRED 开源设计语言 NeoPOP 做 UI：硬边 3D“plunk”按钮、黑底主色、大胆字体与小写文案，支持 Codex / Claude Code / Cursor 等。
+- **参考图**：README 示例图——仅用 skill 的 CSS 做的账单支付界面 https://raw.githubusercontent.com/Satyam085/neopop-design-skill/main/preview.png
+- **类型**：代码生成（CSS 设计语言）
+- **备注**：非官方 skill（NeoPOP 为 CRED 开源设计语言，本仓库未获 CRED 官方背书）。
+
+### 32. cloudmamba-design-skill — 云曼巴品牌设计语言 skill 🟡
+- **作者**：KEVqwe
+- **仓库**：https://github.com/KEVqwe/cloudmamba-design-skill（0★，许可证未声明，2026-11-11 核验；创建 2026-11-10；根目录 SKILL.md）
+- **一句话**：把云曼巴品牌语言（配色与字体 token、9 个 logo SVG、6 个角色 SVG、毛边细节对照）用于官网、产品工作台、PPT、海报与社交封面，明确支持 Codex。
+- **参考图**：README 毛边细节对照 https://raw.githubusercontent.com/KEVqwe/cloudmamba-design-skill/main/assets/previews/texture-comparison.png
+- **类型**：网页设计 / 设计系统（品牌 token）
+- **备注**：单一公司品牌的设计语言 skill，通用性窄于通用设计系统。
+
+### 33. digital-go-design-skill — 日本数字厅设计系统公共服务网页 skill 🟡
+- **作者**：capsrock
+- **仓库**：https://github.com/capsrock/digital-go-design-skill（1★，2026-11-11 核验；创建 2026-11-09；根目录 SKILL.md）
+- **一句话**：以日本数字厅设计系统（DADS β版）为底的公共服务网页设计 skill：易读文字、高对比、黄色与黑色焦点框，含现成设计 token，明确支持 Codex。
+- **参考图**：README 四张示例图——首页 https://raw.githubusercontent.com/capsrock/digital-go-design-skill/main/assets/jp/home.png ；申请表单 https://raw.githubusercontent.com/capsrock/digital-go-design-skill/main/assets/jp/form.png ；管理后台 https://raw.githubusercontent.com/capsrock/digital-go-design-skill/main/assets/jp/table.png
+- **类型**：代码生成（设计系统 token）
+- **备注**：非官方 skill；2026-11-09 创建，昨日 GitHub 搜索未命中，今晚补录（与第 29 条同作者同类 skill）。
+
+### 34. motion-design — LottieFiles 官方动效设计 skill 🟡
+- **作者**：LottieFiles
+- **仓库**：https://github.com/LottieFiles/motion-design-skill（2,927★，MIT，2026-11-11 核验；创建 2026-03-12；`skills/motion-design/SKILL.md`）
+- **一句话**：通用动效设计原则 skill：先定节奏、缓动、编排与情绪意图再写动画代码，覆盖入场、状态反馈、加载、滚动触发与多元素编排，支持 Codex 等 40+ agent。
+- **参考视频**：README 顶部 dotLottie 动效演示 https://lottie.host/cdb5e749-f393-4333-ad23-8200f121e8d3/Z4sIS9xKDC.svg?v=1
+- **类型**：代码生成（CSS / Framer Motion / GSAP / Lottie 动效）
+- **备注**：原仓库创建于 2026-03-12；本轮由当日新建的同名复刻仓库（syahdestiny/skill-motion-design，非 fork）追溯到原作者后入库，复刻仓库本身不另收。
+
 ---
 
 ## 🖼️ 生图
@@ -283,6 +315,20 @@
 - **design-skills-pack-en**（nattagidgig-hash，创建 2026-11-09）：9 个 UI/UX design skill 合集，README 无参考图 / 视频，暂不入库。
 - **atelier-ui**（caicaichuangzhao，创建 2026-11-09）、**claude-code-ui-design**（inchwormz，创建 2026-11-09）、**website-builder-toolkit**（tobiashaas，创建 2026-11-09）、**design-director**（romanroff，创建 2026-11-09）：SKILL.md 已核验、均明确支持 Codex，但 README 均无参考图 / 视频，暂不入库。
 - **am-will/codex-skills 的 frontend-design**：合集型仓库，内含的 frontend-design 系直接导入 Anthropic 官方版（本库第 6 条已收），不重复收录。
+- **gyeol-design**（kimdol1045-hash，创建 2026-11-10）：SKILL.md 已核验（`skills/gyeol-design/SKILL.md`，MIT），Design Lab 展示站已核验可打开，但 README 与 SKILL.md 均未提及 Codex 支持、README 无参考图 / 视频，暂不入库。
+- **lumos-design**（IDEVA-AI，创建 2026-11-10）：SKILL.md 已核验（`skills/lumos-design/SKILL.md`），明确支持 Codex，但 README 全文无任何参考图 / 视频，暂不入库，待作者补 demo 后再收。
+- **futuristic-web-design-skills**（mukulmunda41-create，创建 2026-11-10）：明确支持 Codex，但 README 全文（14,383 字）无任何参考图 / 视频，暂不入库。
+- **prd-to-demo**（ELLIEZHANG893，创建 2026-11-10）：SKILL.md 已核验，未提及 Codex，README 无参考图 / 视频，暂不入库。
+- **motion_design_skill**（txusillo，创建 2026-11-10）：HyperFrames 竖版 Reels 解说视频 skill，README 无参考图 / 视频、SKILL.md 路径未定位，暂不入库。
+- **editorial-design-agent-skill**（KaigorodovTuskul，创建 2026-11-10）：SKILL.md 已核验，未提及 Codex，README 无参考图 / 视频，暂不入库。
+- **hiaaryan/motion-design**（创建 2026-11-10）：代码生成 motion film skill，README 无参考图 / 视频、SKILL.md 路径未定位，暂不入库。
+- **nefr0/custom-design**（创建 2026-11-10）：impeccable fork + Apple HIG，SKILL.md 已核验、提及 Codex，但 README 无参考图 / 视频，且主体为已收录 impeccable 的 fork，暂不入库。
+- **leyen-me/DesignSkills**（创建 2026-11-10）：通用设计智能框架，SKILL.md 已核验，未提及 Codex，README 无参考图 / 视频，暂不入库。
+- **gzh-design-skill**（FelixMaofei，创建 2026-11-10）：isjiamu 原项目的修改版（微信公众号排版），超出本库网页设计 / 生图 / 生视频范围，暂不入库。
+- **syahdestiny/skill-motion-design**（创建 2026-11-10）：非 fork 的同名复刻，原作者为 LottieFiles（2026-03 创建），已按原作者入库（第 34 条），复刻仓库本身不另收。
+- **Jervyyyy/Design-Skills、Ya-MiC/ymzz-wenrun-design-skill、Vuek0/vueko-design-skill、hypnagogic-hallucinations/airy-coastal-ui**（创建 2026-11-10）：README 缺失、过短或无参考图 / 视频，暂不入库。
+
+> 2026-11-11 复查：11-10 暂缓的 9 条（ai-ready-sites、ui-review-loop、unslop-frontend-design、systra-taste、design-skills-pack-en、atelier-ui、claude-code-ui-design、website-builder-toolkit、design-director）README 仍无参考图 / 视频，继续暂缓。
 
 ## 发现源（只作线索，不当来源）
 
@@ -308,4 +354,4 @@
 
 ---
 
-*核验日期：2026-11-10。每日定时更新：新增 skill 经核验后入库，0 新增也汇报当日扫描情况。*
+*核验日期：2026-11-11。每日定时更新：新增 skill 经核验后入库，0 新增也汇报当日扫描情况。*

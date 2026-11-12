@@ -4,7 +4,7 @@
 > 先聚焦 design，后续再扩到其他方向。
 > 仓库：https://github.com/jaxxchen003/awesome-codex-skills
 
-📊 **收录 skill：34** ｜ 🕐 **最后更新：2026-11-11** ｜ 🤖 每日定时更新 ｜ 🌐 **在线预览站：https://jaxxchen003.github.io/awesome-codex-skills/**
+📊 **收录 skill：36** ｜ 🕐 **最后更新：2026-11-12** ｜ 🤖 每日定时更新 ｜ 🌐 **在线预览站：https://jaxxchen003.github.io/awesome-codex-skills/**
 
 ---
 
@@ -23,14 +23,14 @@
 - **生图 / 生视频要拆口径：** 分“代码生成”（SVG / HTML / Remotion 渲染，不调图片视频模型）和“模型生成”（调 Nano Banana / gpt-image / Veo / Sora 等）两类，入库时标注清楚，不混着说。
 - **Stars 口径：** 文中 stars 均为 2026-11-08 GitHub API / 仓库页核验值；合集型仓库的 stars 是整个仓库的，不是单个 skill 的，已注明。
 
-> Reddit 线本轮无缺口：2026-11-11 实测 r/ChatGPTCoding、r/OpenAI、r/ClaudeAI、r/webdev、r/Design 的 new RSS 全部 200 取到，未发现 design skill 新帖；r/ClaudeAI 一条“Opus 5.5 vs $2,000 motion design”帖为动效作品对比、非 skill，不入库。X 线：web search 未发现过去 24 小时内新发布的 design skill 原帖。GitHub Search 本轮 20 余个候选仓库中 4 条入库（neopop、cloudmamba、digital-go 补录、LottieFiles motion-design 追溯），其余因无参考图/视频、未提及 Codex 或不在收录范围暂缓。skills.sh 首页未见今晚候选的新上架条目；agentsuses / open-design.ai / SkillsMP 未发现新增 design skill。
+> Reddit 线本轮有缺口：2026-11-12 实测 www.reddit.com/new RSS 五个分区全部 403（网络策略拦截），重试 old.reddit.com 返回 200 但内容为“Welcome to Reddit”着陆页、非 RSS，api.reddit.com 亦 403——三个路由均未取到帖子列表，本轮 Reddit 覆盖缺失，不编链接。X 线：web search 未发现过去 24 小时内新发布的 design skill 原帖；搜到 Bles Software Designer Stack 线索（8 个免费 MIT skill、含 motion-story / showreel-motion / promo-motion，官网有 29 秒 launch 视频），但未找到公开 GitHub 原仓库（官网 zip 下载）、发布时间未核验，暂不入库，待追溯到原作者仓库或 X 原帖后再收。GitHub Search 本轮 20 余个候选仓库中 2 条入库（danlogo-swisstech 新建、chanmeng-logo-as-code 补录）；其余因合集型、无参考图/视频、空仓库或超出范围暂缓（见暂不收录）。skills.sh 首页已取到，今晚候选条目未现身；agentsuses /new 返回 404；open-design.ai 与 SkillsMP 首页未见今晚候选条目。
 
 ---
 
 ## 📑 目录
 
 - [🌐 网页设计](#-网页设计)（22）
-- [🖼️ 生图](#️-生图)（4）
+- [🖼️ 生图](#️-生图)（6）
 - [🎬 生视频](#-生视频)（8）
 - [🤝 参与方式](#-参与方式)
 - [⚠️ 免责声明](#️-免责声明)
@@ -231,6 +231,21 @@
 - **备注**：它是 skill 的“生图后端”而非 SKILL.md 本身，标注为“工具型”而非“指令型”。
 - **类型**：模型生图 + 生视频
 
+### 35. danlogo-swisstech — 以字为标的瑞士风 logo 体系 skill 🟡
+- **作者**：dan-cube
+- **仓库**：https://github.com/dan-cube/danlogo-swisstech（0★，MIT，2026-11-12 核验；创建 2026-11-11；根目录 SKILL.md）
+- **一句话**：以字为标的 logo 身份系统 skill：中英文字形从零构造、字成一体再取字成符，九阶段流程（简报 → 概念 → 原型 → 精修 → 定稿 → 体系 → 场景 → 提案 → 总结），明确支持 Codex。
+- **参考图**：README hero 图 + EonPoint「首尾」案例图：https://raw.githubusercontent.com/dan-cube/danlogo-swisstech/main/cases/eonpoint-shouwei/images/00-hero.png
+- **类型**：代码生成（定制字形几何构造，不调图片模型）
+
+### 36. chanmeng-logo-as-code — 手绘 logo 转可编辑 SVG 🟡
+- **作者**：ChanMeng666
+- **仓库**：https://github.com/ChanMeng666/chanmeng-logo-as-code（0★，MIT，2026-11-12 核验；创建 2026-06-06，2026-11-06 最后推送；根目录 SKILL.md）
+- **一句话**：把手绘 / 扫描 logo 沿真实轮廓拟合成光滑三次贝塞尔曲线，产出可编辑 SVG + 配色 / 版式变体矩阵 + 交互对比画廊 + PNG/ICO/favicon 导出，支持 Codex。
+- **参考图**：README 示例 SVG——手绘猴子 logo 转码后效果：https://raw.githubusercontent.com/ChanMeng666/chanmeng-logo-as-code/main/examples/chan-monkey/out/monkey/chan-meng-monkey-black-on-white.svg
+- **类型**：代码生成（SVG 矢量化）
+- **备注**：补录：SkillSpot 2026-11-04 上架，仓库 2026-06 创建、11-06 最后推送，本轮由聚合站线索追溯到原作者后入库。
+
 ---
 
 ## 🎬 生视频
@@ -327,6 +342,12 @@
 - **gzh-design-skill**（FelixMaofei，创建 2026-11-10）：isjiamu 原项目的修改版（微信公众号排版），超出本库网页设计 / 生图 / 生视频范围，暂不入库。
 - **syahdestiny/skill-motion-design**（创建 2026-11-10）：非 fork 的同名复刻，原作者为 LottieFiles（2026-03 创建），已按原作者入库（第 34 条），复刻仓库本身不另收。
 - **Jervyyyy/Design-Skills、Ya-MiC/ymzz-wenrun-design-skill、Vuek0/vueko-design-skill、hypnagogic-hallucinations/airy-coastal-ui**（创建 2026-11-10）：README 缺失、过短或无参考图 / 视频，暂不入库。
+- **shopify_skill**（copyFish18650，创建 2026-11-11）：8 个 Codex skill 的安装包合集，其中 6 个为本库已收 skill 的复刻（design、design-taste-frontend、frontend-design、ui-ux-pro-max、web-design-engineer、web-design-guidelines），新增的 shopify-theme-redesign / shopify-policy-pages 为 Shopify 主题装修 skill；合集型仓库且 README 全文无任何参考图 / 视频，暂不入库。
+- **uk-skill**（JDebDesign，创建 2026-11-11）：美式邮件/网页文案转英式本地化 skill，SKILL.md 已核验、提及 Codex，README 含 3 张示例图，但明确不改字体/样式/布局，属文案本地化、超出本库网页设计 / 生图 / 生视频范围，暂不入库。
+- **afterglow**（Maxime282002，创建 2026-11-11）：法语描述的 motion design 视频 skill，但仓库为空、无 README、无 SKILL.md，暂不入库。
+- **claude-code-skills**（rithikanupam-hub，创建 2026-11-11）：112 个 skill 合集（含 video / motion / design），README 全文无参考图 / 视频，合集型暂不入库。
+- **dsh-skills-pack**（adithyanraj03，创建 2026-11-11）：DeepSeek Harness 插件、36 个 skill 合集，未提及 Codex，暂不入库。
+- **Bles Software Designer Stack**（swestack.bles-software.com）：8 个免费 MIT skill（motion-story / showreel-motion / promo-motion / tastegate 等），支持 Codex，官网有 29 秒 launch 视频；但未找到公开 GitHub 原仓库（官网 zip 下载）、发布时间未核验，暂不入库，待追溯到原作者仓库或 X 原帖后再收。
 
 > 2026-11-11 复查：11-10 暂缓的 9 条（ai-ready-sites、ui-review-loop、unslop-frontend-design、systra-taste、design-skills-pack-en、atelier-ui、claude-code-ui-design、website-builder-toolkit、design-director）README 仍无参考图 / 视频，继续暂缓。
 
@@ -334,7 +355,7 @@
 
 - GitHub：anthropics/skills、openai/skills、composio-community/awesome-codex-skills（17,242★，60 skills）
 - 聚合站：skills.sh、agentsuses.com、open-design.ai（244 skills / 58 仓库）、SkillsMP（200 万+ 索引，每条带 githubUrl 指回源仓库）
-- Reddit：r/ChatGPTCoding、r/OpenAI、r/ClaudeAI、r/webdev、r/Design（本轮 RSS 429/403，无直链）
+- Reddit：r/ChatGPTCoding、r/OpenAI、r/ClaudeAI、r/webdev、r/Design（2026-11-12 RSS 三路由均被拦：www.reddit.com 403、old.reddit.com 返回非 RSS 着陆页、api.reddit.com 403，本轮覆盖缺失）
 
 ---
 
@@ -354,4 +375,4 @@
 
 ---
 
-*核验日期：2026-11-11。每日定时更新：新增 skill 经核验后入库，0 新增也汇报当日扫描情况。*
+*核验日期：2026-11-12。每日定时更新：新增 skill 经核验后入库，0 新增也汇报当日扫描情况。*

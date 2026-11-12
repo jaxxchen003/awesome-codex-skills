@@ -7,352 +7,482 @@
 <meta name="description" content="专注 Codex / Agent Skills 的 design 类优秀 skill 合集：网页设计、生图、生视频。每个 skill 都溯源到原始作者，带参考图/视频。">
 <meta name="referrer" content="no-referrer">
 <style>
-:root{--bg:#0f1115;--card:#171a21;--text:#e8eaf0;--muted:#9aa3b2;--accent:#7c5cff;--accent2:#00c2a8;--border:#262b38}
+:root{--bg:#f6f4ef;--ink:#1b1a17;--muted:#6f6a61;--card:#fff;--line:#e8e2d8;--violet:#6c4cf1;--teal:#0e9f8a;--rose:#c2255c;--amber:#d9480f;--radius:20px}
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",PingFang SC,Hiragino Sans GB,Microsoft YaHei,sans-serif;line-height:1.6;padding:0 16px 60px}
-a{color:#8ab4ff;text-decoration:none}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",PingFang SC,Hiragino Sans GB,Microsoft YaHei,sans-serif;line-height:1.6}
+a{color:var(--violet);text-decoration:none}
 a:hover{text-decoration:underline}
-header{max-width:1080px;margin:0 auto;padding:48px 0 8px;text-align:center}
-header h1{font-size:2.2rem;line-height:1.3}
-header p{color:var(--muted);margin-top:10px}
-.stats{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:20px 0 8px}
-.stat{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 18px;text-align:center}
-.stat b{font-size:1.3rem;display:block}
-.stat span{color:var(--muted);font-size:.85rem}
-.toolbar{max-width:1080px;margin:24px auto 0;display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
-.toolbar input{flex:1;min-width:220px;max-width:420px;background:var(--card);border:1px solid var(--border);color:var(--text);border-radius:999px;padding:10px 18px;font-size:1rem;outline:none}
-.toolbar input:focus{border-color:var(--accent)}
-.filter-btn{background:var(--card);border:1px solid var(--border);color:var(--text);border-radius:999px;padding:10px 18px;cursor:pointer;font-size:.95rem}
-.filter-btn.active{background:var(--accent);border-color:var(--accent);color:#fff}
-.note{max-width:1080px;margin:18px auto 0;color:var(--muted);font-size:.9rem;text-align:center}
-.note code{background:var(--card);padding:2px 6px;border-radius:6px;color:var(--text)}
-.grid{max-width:1080px;margin:28px auto 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
-.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:10px}
-.card h3{font-size:1.15rem;line-height:1.4}
-.card h3 .n{color:var(--muted);font-size:.9rem;font-weight:400}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px 70px}
+header{padding:64px 0 8px}
+.eyebrow{font-size:.82rem;letter-spacing:.22em;text-transform:uppercase;color:var(--violet);font-weight:700}
+header h1{font-family:Georgia,"Songti SC","Noto Serif SC",serif;font-size:clamp(2.4rem,5.5vw,3.6rem);line-height:1.15;margin:14px 0 12px;letter-spacing:-.01em}
+header h1 em{font-style:italic;background:linear-gradient(100deg,var(--violet),var(--teal));-webkit-background-clip:text;background-clip:text;color:transparent}
+header p.lede{color:var(--muted);font-size:1.08rem;max-width:720px}
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin:26px 0 6px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:.92rem}
+.stat b{font-size:1.05rem}
+.stat span{color:var(--muted)}
+.toolbar{position:sticky;top:0;z-index:10;background:rgba(246,244,239,.92);backdrop-filter:blur(10px);padding:14px 0;display:flex;gap:10px;flex-wrap:wrap;align-items:center;border-bottom:1px solid var(--line);margin-top:18px}
+.toolbar input{flex:1;min-width:200px;max-width:380px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:11px 18px;font-size:.98rem;outline:none;color:var(--ink)}
+.toolbar input:focus{border-color:var(--violet);box-shadow:0 0 0 3px rgba(108,76,241,.15)}
+.filter-btn{background:var(--card);border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:10px 16px;cursor:pointer;font-size:.92rem}
+.filter-btn.active{background:var(--ink);border-color:var(--ink);color:#fff}
+.sort{margin-left:auto;display:flex;gap:6px}
+.sort button{background:transparent;border:1px solid var(--line);border-radius:999px;padding:8px 14px;cursor:pointer;font-size:.88rem;color:var(--muted)}
+.sort button.active{background:var(--card);color:var(--ink);border-color:var(--ink)}
+.note{color:var(--muted);font-size:.88rem;margin:20px 0 4px}
+.note code{background:#efece5;padding:2px 6px;border-radius:6px;color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:22px;margin-top:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .18s ease}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(27,26,23,.12)}
+.media{position:relative;aspect-ratio:16/10;background:#ece8e0;overflow:hidden}
+.media img,.media video{width:100%;height:100%;object-fit:cover;display:block;background:#ece8e0}
+.media-chip{position:absolute;left:12px;bottom:12px;background:rgba(27,26,23,.82);color:#fff;font-size:.78rem;border-radius:999px;padding:4px 11px;pointer-events:none}
+.body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card h3{font-size:1.12rem;line-height:1.45}
+.card h3 .n{color:var(--muted);font-size:.85rem;font-weight:600;margin-right:4px}
 .badges{display:flex;gap:6px;flex-wrap:wrap}
-.badge{font-size:.78rem;border-radius:999px;padding:2px 10px;border:1px solid var(--border);color:var(--muted)}
-.badge.ok{color:#7ee2a8;border-color:#2c5a40}
-.badge.type{color:#8ab4ff;border-color:#2c4a7a}
-.badge.cat{color:#e0aaff;border-color:#4a2c7a}
-.card p.desc{color:#c6cbd8;font-size:.95rem;flex:1}
-.meta{color:var(--muted);font-size:.88rem}
-.links{display:flex;gap:14px;flex-wrap:wrap;font-size:.92rem}
-footer{max-width:1080px;margin:40px auto 0;text-align:center;color:var(--muted);font-size:.88rem}
+.badge{font-size:.76rem;border-radius:999px;padding:3px 10px;border:1px solid var(--line);color:var(--muted);background:#faf9f6}
+.badge.ok{color:#0b7a5f;border-color:#bfe3d8;background:#eef8f4}
+.badge.cat-web{color:var(--violet);border-color:#ddd3fb;background:#f4f0fe}
+.badge.cat-image{color:var(--amber);border-color:#f8d5c3;background:#fdf1ea}
+.badge.cat-video{color:var(--rose);border-color:#f4c8d8;background:#fdf0f4}
+.card p.desc{color:#4a463f;font-size:.94rem;flex:1}
+.meta{color:var(--muted);font-size:.86rem}
+.links{display:flex;gap:8px;flex-wrap:wrap}
+.links a{font-size:.88rem;border:1px solid var(--line);border-radius:999px;padding:6px 13px;color:var(--ink);background:#faf9f6}
+.links a:hover{border-color:var(--ink);text-decoration:none}
+.links a:first-child{background:var(--ink);color:#fff;border-color:var(--ink)}
+footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:.86rem;text-align:center}
 .hidden{display:none!important}
+@media (max-width:640px){header{padding-top:40px}.sort{margin-left:0}}
 </style>
 </head>
 <body>
+<div class="wrap">
 <header>
-<h1>Codex Design Skills 🎨</h1>
-<p>专注 Codex / Agent Skills 的 design 类优秀 skill 合集：网页设计、生图、生视频。<br>来源只写原始作者，聚合站只当线索；每个 case 都带参考图 / 视频。</p>
+<p class="eyebrow">Awesome Codex Skills · Design</p>
+<h1>给 Codex 的<br><em>设计灵感库</em></h1>
+<p class="lede">36 个经过溯源核验的设计类 skill：网页设计、生图、生视频。来源只写原始作者，聚合站只当线索；每张卡片都带上它自己的参考图或演示视频。</p>
 <div class="stats">
-<div class="stat"><b>36</b><span>收录 skill</span></div>
-<div class="stat"><b>22</b><span>网页设计</span></div>
-<div class="stat"><b>6</b><span>生图</span></div>
-<div class="stat"><b>8</b><span>生视频</span></div>
-<div class="stat"><b>2026-11-12</b><span>最后更新</span></div>
+<div class="stat"><b>36</b> <span>收录 skill</span></div>
+<div class="stat"><b>22</b> <span>网页设计</span></div>
+<div class="stat"><b>6</b> <span>生图</span></div>
+<div class="stat"><b>8</b> <span>生视频</span></div>
+<div class="stat"><b>2026-11-12</b> <span>最后更新</span></div>
 </div>
 </header>
 
 <div class="toolbar">
-<input id="q" type="search" placeholder="搜索 skill / 作者 / 关键词…" oninput="filterCards()">
+<input id="q" type="search" placeholder="搜索 skill / 作者 / 关键词…" oninput="apply()">
 <button class="filter-btn active" data-f="all" onclick="setFilter(this)">全部</button>
 <button class="filter-btn" data-f="web" onclick="setFilter(this)">🌐 网页设计</button>
 <button class="filter-btn" data-f="image" onclick="setFilter(this)">🖼️ 生图</button>
 <button class="filter-btn" data-f="video" onclick="setFilter(this)">🎬 生视频</button>
+<div class="sort">
+<button class="active" data-s="new" onclick="setSort(this)">最新在前</button>
+<button data-s="old" onclick="setSort(this)">最早在前</button>
 </div>
-<p class="note">✅ = X 原帖作者本人 + GitHub 原仓库双核验 &nbsp;·&nbsp; 🟡 = GitHub 原仓库已核验，X 首发未定位到作者本人<br>生图 / 生视频分两类标注：<code>代码生成</code>（SVG / HTML / Remotion 渲染）与 <code>模型生成</code>（调图片 / 视频模型）。Stars 为核验日快照，新增 2 条为 2026-11-12 核验值（其中 1 条为补录）。</p>
+<span id="count" style="color:var(--muted);font-size:.88rem">36 / 36 条</span>
+</div>
+<p class="note">✅ = X 原帖作者本人 + GitHub 原仓库双核验 &nbsp;·&nbsp; 🟡 = GitHub 原仓库已核验，X 首发未定位到作者本人<br>生图 / 生视频分两类标注：<code>代码生成</code>（SVG / HTML / Remotion 渲染）与 <code>模型生成</code>（调图片 / 视频模型）。Stars 为核验日快照。2026-11-12 视觉改版：卡片顶部展示参考图 / 演示视频（视频点开即播），同时修正 3 处失效链接（Hallmark 视频换新变体、video-shotcraft 视频换 README 动图、idea-to-motion 的 7 条失效演示视频已移除）。</p>
 
 <div class="grid" id="grid">
-
-<div class="card" data-cat="web" data-search="anatomy ryan wheresryan22 等距 剖视图 svg webgl 3d">
-<h3><span class="n">1.</span> Anatomy ✅</h3>
-<div class="badges"><span class="badge cat">网页设计</span><span class="badge type">代码生成</span><span class="badge ok">✅ 双核验</span></div>
+<article class="card" data-cat="web" data-n="1" data-search="anatomy ryan wheresryan22 等距 剖视图 svg webgl 3d">
+<div class="media"><video controls preload="metadata" playsinline referrerpolicy="no-referrer" src="https://video.twimg.com/amplify_video/2108946813889675264/vid/avc1/1920x1080/etLTvFpDLdf7-z6D.mp4?tag=29"></video><span class="media-chip">▶ 视频 · 点我播放</span></div>
+<div class="body">
+<h3><span class="n">#1</span> Anatomy ✅</h3>
+<div class="badges"><span class="badge cat-web">网页设计</span><span class="badge type">代码生成</span><span class="badge ok">✅ 双核验</span></div>
 <p class="desc">一句话描述一台机器，变成可旋转、可拆解的交互式等距线框图，带 WebGL 火 / 水 / 等离子 shader 与真实 3D 运动。</p>
 <p class="meta">作者：Ryan（@wheresryan22） · 约 25,710★ · MIT</p>
 <div class="links"><a href="https://github.com/wheresryan22/anatomy" target="_blank">GitHub ↗</a><a href="https://x.com/wheresryan22/status/2108948624004526516" target="_blank">X 原帖 ↗</a><a href="https://video.twimg.com/amplify_video/2108946813889675264/vid/avc1/1920x1080/etLTvFpDLdf7-z6D.mp4?tag=29" target="_blank" rel="noreferrer">参考视频 ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="web" data-search="unslop damir heydamir ai味 仪表盘 dashboard">
-<h3><span class="n">2.</span> unslop ✅</h3>
-<div class="badges"><span class="badge cat">网页设计</span><span class="badge type">模型生图（可选）</span><span class="badge ok">✅ 双核验</span></div>
+<article class="card" data-cat="web" data-n="2" data-search="unslop damir heydamir ai味 仪表盘 dashboard">
+<div class="media"><video controls preload="metadata" playsinline referrerpolicy="no-referrer" src="https://video.twimg.com/amplify_video/2114009309126299648/vid/avc1/2168x2160/ir9g5tra15711hQD.mp4?tag=29"></video><span class="media-chip">▶ 视频 · 点我播放</span></div>
+<div class="body">
+<h3><span class="n">#2</span> unslop ✅</h3>
+<div class="badges"><span class="badge cat-web">网页设计</span><span class="badge type">模型生图（可选）</span><span class="badge ok">✅ 双核验</span></div>
 <p class="desc">9.8 秒前后对比，把紫渐变 + 发光 + emoji 标签的“AI 味”仪表盘改成深色克制设计；适用于落地页、看板与移动应用，支持 Codex。</p>
 <p class="meta">作者：Damir Sokolovsky（@heydamir） · CC BY 4.0</p>
 <div class="links"><a href="https://github.com/heydamir/unslop" target="_blank">GitHub ↗</a><a href="https://x.com/heydamir/status/2115063463063998736" target="_blank">X 原帖 ↗</a><a href="https://video.twimg.com/amplify_video/2114009309126299648/vid/avc1/2168x2160/ir9g5tra15711hQD.mp4?tag=29" target="_blank" rel="noreferrer">参考视频 ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="web" data-search="stageshow benji taylor faux ui bento">
-<h3><span class="n">3.</span> Stageshow ✅</h3>
-<div class="badges"><span class="badge cat">网页设计</span><span class="badge type">代码生成</span><span class="badge ok">✅ 双核验</span></div>
+<article class="card" data-cat="web" data-n="3" data-search="stageshow benji taylor faux ui bento">
+<div class="media"><video controls preload="metadata" playsinline referrerpolicy="no-referrer" src="https://video.twimg.com/amplify_video/2116591037816971264/vid/avc1/2784x1944/CQhIlZl1gbvNSIkA.mp4?tag=29"></video><span class="media-chip">▶ 视频 · 点我播放</span></div>
+<div class="body">
+<h3><span class="n">#3</span> Stageshow ✅</h3>
+<div class="badges"><span class="badge cat-web">网页设计</span><span class="badge type">代码生成</span><span class="badge ok">✅ 双核验</span></div>
 <p class="desc">让 agent 做出更好的 faux UI 静帧、动画、bento grid，先讲故事再拍片再修。</p>
 <p class="meta">作者：Benji Taylor（@benjitaylor） · 仓库 2,379★</p>
 <div class="links"><a href="https://github.com/benjitaylor/skills" target="_blank">GitHub ↗</a><a href="https://x.com/benjitaylor/status/2116593247854453244" target="_blank">X 原帖 ↗</a><a href="https://benji.org/stageshow" target="_blank">官网对比 ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="web" data-search="ai-design-skills elaya landing page 落地页 higgsfield">
-<h3><span class="n">4.</span> ai-design-skills / landing-page-design ✅</h3>
-<div class="badges"><span class="badge cat">网页设计</span><span class="badge type">模型生图</span><span class="badge ok">✅ 双核验</span></div>
+<article class="card" data-cat="web" data-n="4" data-search="ai-design-skills elaya landing page 落地页 higgsfield">
+<div class="media"><video controls preload="metadata" playsinline referrerpolicy="no-referrer" src="https://video.twimg.com/amplify_video/2114048823970643968/vid/avc1/1752x1080/zoo2YAjtfZQZ007L.mp4?tag=29"></video><span class="media-chip">▶ 视频 · 点我播放</span></div>
+<div class="body">
+<h3><span class="n">#4</span> ai-design-skills / landing-page-design ✅</h3>
+<div class="badges"><span class="badge cat-web">网页设计</span><span class="badge type">模型生图</span><span class="badge ok">✅ 双核验</span></div>
 <p class="desc">过去两个月所有落地页都用 Higgsfield + Claude + Cursor + 自研 AI 设计师 skill 做出来，skill 已开源，Codex 可用。</p>
 <p class="meta">作者：Elaya（@elayadesigns） · 13k+★ · MIT</p>
 <div class="links"><a href="https://github.com/elayadesign/ai-design-skills" target="_blank">GitHub ↗</a><a href="https://x.com/elayadesigns/status/2114049200749175174" target="_blank">X 原帖 ↗</a><a href="https://video.twimg.com/amplify_video/2114048823970643968/vid/avc1/1752x1080/zoo2YAjtfZQZ007L.mp4?tag=29" target="_blank" rel="noreferrer">参考视频 ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="web" data-search="hallmark nutlope slop">
-<h3><span class="n">5.</span> Hallmark ✅</h3>
-<div class="badges"><span class="badge cat">网页设计</span><span class="badge type">代码生成</span><span class="badge ok">✅ 双核验</span></div>
+<article class="card" data-cat="web" data-n="5" data-search="hallmark nutlope slop">
+<div class="media"><video controls preload="metadata" playsinline referrerpolicy="no-referrer" src="https://video.twimg.com/amplify_video/2056751127643734016/vid/avc1/1920x1080/5gmXVphI25MlGBvJ.mp4?tag=27"></video><span class="media-chip">▶ 视频 · 点我播放</span></div>
+<div class="body">
+<h3><span class="n">#5</span> Hallmark ✅</h3>
+<div class="badges"><span class="badge cat-web">网页设计</span><span class="badge type">代码生成</span><span class="badge ok">✅ 双核验</span></div>
 <p class="desc">50 个主题材质 + 分层门控 + 真实浏览器 sloplint 检查 + 755 张 Wikimedia 授权照片，让 UI 与落地页默认就好看，支持 Codex。</p>
 <p class="meta">作者：Nutlope（@nutlope） · 50,106★</p>
-<div class="links"><a href="https://github.com/Nutlope/hallmark" target="_blank">GitHub ↗</a><a href="https://x.com/nutlope/status/2056754959819915459" target="_blank">X 原帖 ↗</a><a href="https://video.twimg.com/amplify_video/2056751127643734016/vid/avc1/1920x1080/5gmXVphI25MlG.mp4?tag=29" target="_blank" rel="noreferrer">参考视频 ↗</a></div>
+<div class="links"><a href="https://github.com/Nutlope/hallmark" target="_blank">GitHub ↗</a><a href="https://x.com/nutlope/status/2056754959819915459" target="_blank">X 原帖 ↗</a><a href="https://video.twimg.com/amplify_video/2056751127643734016/vid/avc1/1920x1080/5gmXVphI25MlGBvJ.mp4?tag=27" target="_blank" rel="noreferrer">参考视频 ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="web" data-search="frontend-design anthropic 官方">
-<h3><span class="n">6.</span> frontend-design（Anthropic 官方）🟡</h3>
-<div class="badges"><span class="badge cat">网页设计</span><span class="badge type">规则文档</span><span class="badge">🟡 GitHub 核验</span></div>
+<article class="card" data-cat="web" data-n="6" data-search="frontend-design anthropic 官方">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://opengraph.githubassets.com/1/anthropics/skills" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#6</span> frontend-design（Anthropic 官方）🟡</h3>
+<div class="badges"><span class="badge cat-web">网页设计</span><span class="badge type">规则文档</span><span class="badge">🟡 GitHub 核验</span></div>
 <p class="desc">公认的 baseline 审美护栏：先定大胆视觉方向再写代码，禁 Inter / Roboto / Arial / Space Grotesk 等俗字体。</p>
 <p class="meta">作者：Anthropic · 188,557★（全仓库）</p>
 <div class="links"><a href="https://github.com/anthropics/skills" target="_blank">GitHub ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="web" data-search="ui-ux-pro-max nextlevelbuilder">
-<h3><span class="n">7.</span> ui-ux-pro-max 🟡</h3>
-<div class="badges"><span class="badge cat">网页设计</span><span class="badge type">模型生图（部分）</span><span class="badge">🟡 GitHub 核验</span></div>
+<article class="card" data-cat="web" data-n="7" data-search="ui-ux-pro-max nextlevelbuilder">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://cdn.nextlevelbuilder.io/skills/3dviz/harness-village.gif" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#7</span> ui-ux-pro-max 🟡</h3>
+<div class="badges"><span class="badge cat-web">网页设计</span><span class="badge type">模型生图（部分）</span><span class="badge">🟡 GitHub 核验</span></div>
 <p class="desc">67 种 UI 风格、161 条行业规则、161 套配色、57 组字体搭配的设计智能库。</p>
 <p class="meta">作者：nextlevelbuilder · 146,474★</p>
 <div class="links"><a href="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill" target="_blank">GitHub ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="web" data-search="taste-skill leon lin 品味">
-<h3><span class="n">8.</span> taste-skill / design-taste-frontend 🟡</h3>
-<div class="badges"><span class="badge cat">网页设计</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
+<article class="card" data-cat="web" data-n="8" data-search="taste-skill leon lin 品味">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/examples/v2/coffee-storefront.webp" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#8</span> taste-skill / design-taste-frontend 🟡</h3>
+<div class="badges"><span class="badge cat-web">网页设计</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
 <p class="desc">三个 1–10 档位（布局变化 / 动效强度 / 视觉密度）调参式反俗套前端品味，从 247 个精选站点研究的 20 个艺术方向中每次发 3 个方向。</p>
 <p class="meta">作者：Leon Lin（Leonxlnx） · 111,530★（全仓库）</p>
 <div class="links"><a href="https://github.com/Leonxlnx/taste-skill" target="_blank">GitHub ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="web" data-search="impeccable paul bakaus">
-<h3><span class="n">9.</span> impeccable 🟡</h3>
-<div class="badges"><span class="badge cat">网页设计</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
+<article class="card" data-cat="web" data-n="9" data-search="impeccable paul bakaus">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://raw.githubusercontent.com/pbakaus/impeccable/main/docs/images/readme-with.webp" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#9</span> impeccable 🟡</h3>
+<div class="badges"><span class="badge cat-web">网页设计</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
 <p class="desc">“给 agent 的设计词汇表”：23+ 命令 + 59 条 AI 痕迹检测规则 + 浏览器实时迭代，分 brand / product 双模式。</p>
 <p class="meta">作者：Paul Bakaus（pbakaus） · 105,331★ · Apache-2.0</p>
 <div class="links"><a href="https://github.com/pbakaus/impeccable" target="_blank">GitHub ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="web" data-search="frontend-ui-engineering addy osmani">
-<h3><span class="n">10.</span> frontend-ui-engineering（Addy Osmani）🟡</h3>
-<div class="badges"><span class="badge cat">网页设计</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
+<article class="card" data-cat="web" data-n="10" data-search="frontend-ui-engineering addy osmani">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://addyosmani.com/assets/images/addys-agent-skills.jpg" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#10</span> frontend-ui-engineering（Addy Osmani）🟡</h3>
+<div class="badges"><span class="badge cat-web">网页设计</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
 <p class="desc">设计系统 token + 响应式 + 无障碍（WCAG 2.1 AA）+ 加载 / 空 / 错状态的生产级前端实施指南。</p>
 <p class="meta">作者：Addy Osmani · 113,858★（全仓库）</p>
 <div class="links"><a href="https://github.com/addyosmani/agent-skills" target="_blank">GitHub ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="web" data-search="emil kowalski 动效 animation">
-<h3><span class="n">11.</span> emilkowalski/skills 🟡</h3>
-<div class="badges"><span class="badge cat">网页设计</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
+<article class="card" data-cat="web" data-n="11" data-search="emil kowalski 动效 animation">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://github.com/user-attachments/assets/84fca9a6-0b2b-4927-8f48-f3ce194a5c47" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#11</span> emilkowalski/skills 🟡</h3>
+<div class="badges"><span class="badge cat-web">网页设计</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
 <p class="desc">动效决策框架（该不该动、目的、缓动、时长 &lt;300ms）+ review-animations / improve-animations 等评审 skill。</p>
 <p class="meta">作者：Emil Kowalski · 54,324★（全仓库）</p>
 <div class="links"><a href="https://github.com/emilkowalski/skills" target="_blank">GitHub ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="web" data-search="web-design-guidelines vercel">
-<h3><span class="n">12.</span> web-design-guidelines（Vercel 官方）🟡</h3>
-<div class="badges"><span class="badge cat">网页设计</span><span class="badge type">规则审查</span><span class="badge">🟡 GitHub 核验</span></div>
+<article class="card" data-cat="web" data-n="12" data-search="web-design-guidelines vercel">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://opengraph.githubassets.com/1/vercel-labs/agent-skills" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#12</span> web-design-guidelines（Vercel 官方）🟡</h3>
+<div class="badges"><span class="badge cat-web">网页设计</span><span class="badge type">规则审查</span><span class="badge">🟡 GitHub 核验</span></div>
 <p class="desc">按 Vercel《Web Interface Guidelines》做无障碍与交互审查，逐条报 file:line 的评审型 skill。</p>
 <p class="meta">作者：Vercel Labs · 33,682★（全仓库）</p>
 <div class="links"><a href="https://github.com/vercel-labs/agent-skills" target="_blank">GitHub ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="web" data-search="frontend-skill openai codex 官方">
-<h3><span class="n">13.</span> frontend-skill（OpenAI 官方 Codex skill）🟡</h3>
-<div class="badges"><span class="badge cat">网页设计</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
+<article class="card" data-cat="web" data-n="13" data-search="frontend-skill openai codex 官方">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://opengraph.githubassets.com/1/openai/skills" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#13</span> frontend-skill（OpenAI 官方 Codex skill）🟡</h3>
+<div class="badges"><span class="badge cat-web">网页设计</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
 <p class="desc">OpenAI 官方 Codex 前端 skill：无卡片布局、全幅 hero、品牌优先层级、克制动效、≤2 字体 + 1 强调色。</p>
 <p class="meta">作者：OpenAI · 28,579★（全仓库）</p>
 <div class="links"><a href="https://github.com/openai/skills" target="_blank">GitHub ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="image" data-search="baoyu-design jimliu claude design mockup deck">
-<h3><span class="n">14.</span> baoyu-design 🟡</h3>
-<div class="badges"><span class="badge cat">生图</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
+<article class="card" data-cat="image" data-n="14" data-search="baoyu-design jimliu claude design mockup deck">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://raw.githubusercontent.com/JimLiu/baoyu-design/main/assets/screenshots/claude-slides-editor.webp" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#14</span> baoyu-design 🟡</h3>
+<div class="badges"><span class="badge cat-image">生图</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
 <p class="desc">把 claude.ai 的 Design Artifact 本地化为 Agent Skill：UI mockup / 原型、deck、设计系统、dashboard、motion film 五个可编辑器打开的 artifact 类型，全部自包含 HTML。支持 Codex。</p>
 <p class="meta">作者：JimLiu · 6,206★</p>
 <div class="links"><a href="https://github.com/JimLiu/baoyu-design" target="_blank">GitHub ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="image" data-search="codex-ui-design gwelinder gpt-image mockup">
-<h3><span class="n">15.</span> codex-ui-design 🟡</h3>
-<div class="badges"><span class="badge cat">生图</span><span class="badge type">模型生图</span><span class="badge">🟡 GitHub 核验</span></div>
+<article class="card" data-cat="image" data-n="15" data-search="codex-ui-design gwelinder gpt-image mockup">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://opengraph.githubassets.com/1/gwelinder/pi-extension-pack" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#15</span> codex-ui-design 🟡</h3>
+<div class="badges"><span class="badge cat-image">生图</span><span class="badge type">模型生图</span><span class="badge">🟡 GitHub 核验</span></div>
 <p class="desc">走本地 Codex app-server + 已登录的 ChatGPT / Codex 订阅调 gpt-image-2 先出界面 mockup，再转成 build spec 落代码，不用 fal.ai key。</p>
 <p class="meta">作者：gwelinder · 2★</p>
 <div class="links"><a href="https://github.com/gwelinder/pi-extension-pack" target="_blank">GitHub ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="image" data-search="logo-design-skill kaan logo svg 品牌">
-<h3><span class="n">16.</span> logo-design-skill 🟡</h3>
-<div class="badges"><span class="badge cat">生图</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
+<article class="card" data-cat="image" data-n="16" data-search="logo-design-skill kaan logo svg 品牌">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://raw.githubusercontent.com/kaankiziltug/logo-design-skill/main/docs/images/covers-28.png" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#16</span> logo-design-skill 🟡</h3>
+<div class="badges"><span class="badge cat-image">生图</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
 <p class="desc">从 brief 到 SVG 成品 + 品牌规范的完整 logo 设计流程，附 1,400+ logo 参考库。</p>
 <p class="meta">作者：kaankiziltug · 6,244★</p>
 <div class="links"><a href="https://github.com/kaankiziltug/logo-design-skill" target="_blank">GitHub ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="image" data-search="comfyui comfy-org 本地 生图 生视频 节点">
-<h3><span class="n">17.</span> ComfyUI 🟡</h3>
-<div class="badges"><span class="badge cat">生图</span><span class="badge type">模型生图</span><span class="badge">🟡 GitHub 核验</span></div>
+<article class="card" data-cat="image" data-n="17" data-search="comfyui comfy-org 本地 生图 生视频 节点">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://github.com/user-attachments/assets/36e065e0-bfae-4456-8c7f-8369d5ea48a2" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#17</span> ComfyUI 🟡</h3>
+<div class="badges"><span class="badge cat-image">生图</span><span class="badge type">模型生图</span><span class="badge">🟡 GitHub 核验</span></div>
 <p class="desc">最强模块化本地生图 / 生视频：节点式扩散模型 GUI + API + 后端，自有 GPU 零单张成本跑开源模型。标注为“工具型”而非“指令型”。</p>
 <p class="meta">作者：Comfy-Org · 145,565★ · GPL-3.0</p>
 <div class="links"><a href="https://github.com/Comfy-Org/ComfyUI" target="_blank">GitHub ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="image" data-search="danlogo swisstech dan-cube logo 字标 瑞士 字体">
-<h3><span class="n">35.</span> danlogo-swisstech 🟡</h3>
-<div class="badges"><span class="badge cat">生图</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
+<article class="card" data-cat="image" data-n="35" data-search="danlogo swisstech dan-cube logo 字标 瑞士 字体">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://raw.githubusercontent.com/dan-cube/danlogo-swisstech/main/cases/eonpoint-shouwei/images/00-hero.png" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#35</span> danlogo-swisstech 🟡</h3>
+<div class="badges"><span class="badge cat-image">生图</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
 <p class="desc">以字为标的 logo 身份系统 skill：中英文字形从零构造、字成一体再取字成符，九阶段流程从简报到提案，明确支持 Codex。</p>
 <p class="meta">作者：dan-cube · 0★ · MIT</p>
 <div class="links"><a href="https://github.com/dan-cube/danlogo-swisstech" target="_blank">GitHub ↗</a><a href="https://raw.githubusercontent.com/dan-cube/danlogo-swisstech/main/cases/eonpoint-shouwei/images/00-hero.png" target="_blank">参考图 ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="image" data-search="chanmeng logo as code 手绘 logo svg 贝塞尔 矢量">
-<h3><span class="n">36.</span> chanmeng-logo-as-code 🟡</h3>
-<div class="badges"><span class="badge cat">生图</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
+<article class="card" data-cat="image" data-n="36" data-search="chanmeng logo as code 手绘 logo svg 贝塞尔 矢量">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://raw.githubusercontent.com/ChanMeng666/chanmeng-logo-as-code/main/examples/chan-monkey/out/monkey/chan-meng-monkey-black-on-white.svg" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#36</span> chanmeng-logo-as-code 🟡</h3>
+<div class="badges"><span class="badge cat-image">生图</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
 <p class="desc">把手绘 / 扫描 logo 沿真实轮廓拟合成光滑三次贝塞尔曲线，产出可编辑 SVG + 配色 / 版式变体 + 交互对比画廊，支持 Codex。</p>
 <p class="meta">作者：ChanMeng666 · 0★ · MIT</p>
 <div class="links"><a href="https://github.com/ChanMeng666/chanmeng-logo-as-code" target="_blank">GitHub ↗</a><a href="https://raw.githubusercontent.com/ChanMeng666/chanmeng-logo-as-code/main/examples/chan-monkey/out/monkey/chan-meng-monkey-black-on-white.svg" target="_blank">参考图 ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="video" data-search="hyperframes heygen html 视频 mp4 字幕">
-<h3><span class="n">18.</span> HyperFrames ✅</h3>
-<div class="badges"><span class="badge cat">生视频</span><span class="badge type">代码生成</span><span class="badge ok">✅ 双核验</span></div>
+<article class="card" data-cat="video" data-n="18" data-search="hyperframes heygen html 视频 mp4 字幕">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://github.com/user-attachments/assets/f6ff9fae-f33d-4f68-bd54-f3ed4ba6473b" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#18</span> HyperFrames ✅</h3>
+<div class="badges"><span class="badge cat-video">生视频</span><span class="badge type">代码生成</span><span class="badge ok">✅ 双核验</span></div>
 <p class="desc">Agent 写 HTML / CSS / JS 场景，渲染成帧精确 MP4；9 个 skill、约 450 个现成 blocks。</p>
 <p class="meta">作者：HeyGen（@HeyGen，官方） · 80,455★ · Apache-2.0</p>
 <div class="links"><a href="https://github.com/heygen-com/hyperframes" target="_blank">GitHub ↗</a><a href="https://x.com/HeyGen/status/2057123793907458232" target="_blank">X 原帖 ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="video" data-search="video-shotcraft vincent 宣传片 电影 remotion">
-<h3><span class="n">19.</span> video-shotcraft ✅</h3>
-<div class="badges"><span class="badge cat">生视频</span><span class="badge type">代码生成</span><span class="badge ok">✅ 双核验</span></div>
+<article class="card" data-cat="video" data-n="19" data-search="video-shotcraft vincent 宣传片 电影 remotion">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://raw.githubusercontent.com/Vincentwei1021/video-shotcraft/main/assets/readme/workflow.gif" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#19</span> video-shotcraft ✅</h3>
+<div class="badges"><span class="badge cat-video">生视频</span><span class="badge type">代码生成</span><span class="badge ok">✅ 双核验</span></div>
 <p class="desc">用真实页面截图 + 124 张镜头配方卡 / 150 个动态预览，按节拍剪辑 + 音效设计，Remotion 渲染 1080p MP4，可导出剪映草稿。明确支持 Codex。</p>
 <p class="meta">作者：Vincent Wei（@VincentWei93） · 17,614★ · Apache-2.0</p>
-<div class="links"><a href="https://github.com/Vincentwei1021/video-shotcraft" target="_blank">GitHub ↗</a><a href="https://x.com/VincentWei93/status/2079118667074376114" target="_blank">X 原帖 ↗</a><a href="https://video.twimg.com/amplify_video/2079118623243960320/vid/avc1/1280x720/DV5UEEk2hvip2Q.mp4?tag=29" target="_blank" rel="noreferrer">参考视频 ↗</a></div>
+<div class="links"><a href="https://github.com/Vincentwei1021/video-shotcraft" target="_blank">GitHub ↗</a><a href="https://x.com/VincentWei93/status/2079118667074376114" target="_blank">X 原帖 ↗</a><a href="https://raw.githubusercontent.com/Vincentwei1021/video-shotcraft/main/assets/readme/workflow.gif" target="_blank" rel="noreferrer">参考图 ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="video" data-search="brag latent-spaces launch 视频">
-<h3><span class="n">20.</span> brag 🟡</h3>
-<div class="badges"><span class="badge cat">生视频</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
+<article class="card" data-cat="video" data-n="20" data-search="brag latent-spaces launch 视频">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://raw.githubusercontent.com/latent-spaces/brag/main/docs/assets/hero.png" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#20</span> brag 🟡</h3>
+<div class="badges"><span class="badge cat-video">生视频</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
 <p class="desc">一句话把刚做完的项目变成带音乐 / 动效 / 分享文案的短 launch 视频（底层 HyperFrames），产物为 brag.mp4。</p>
 <p class="meta">作者：latent-spaces · 20,650★ · MIT</p>
 <div class="links"><a href="https://github.com/latent-spaces/brag" target="_blank">GitHub ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="video" data-search="remotion react 视频">
-<h3><span class="n">21.</span> Remotion skills 🟡</h3>
-<div class="badges"><span class="badge cat">生视频</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
+<article class="card" data-cat="video" data-n="21" data-search="remotion react 视频">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://opengraph.githubassets.com/1/remotion-dev/skills" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#21</span> Remotion skills 🟡</h3>
+<div class="badges"><span class="badge cat-video">生视频</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
 <p class="desc">用 React 写视频：标题卡、地图动画、字幕、SaaS 集成等 12 个 skill，Studio 预览 + 渲染成片。README 明确支持 Codex。</p>
 <p class="meta">作者：Remotion 团队 · 6,533★</p>
 <div class="links"><a href="https://github.com/remotion-dev/skills" target="_blank">GitHub ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="video" data-search="pixelfx rehan 像素 特效">
-<h3><span class="n">22.</span> pixelfx ✅</h3>
-<div class="badges"><span class="badge cat">生视频</span><span class="badge type">代码生成</span><span class="badge ok">✅ 双核验</span></div>
+<article class="card" data-cat="video" data-n="22" data-search="pixelfx rehan 像素 特效">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://raw.githubusercontent.com/patch-gg/pixelfx/main/docs/readme/montage.gif" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#22</span> pixelfx ✅</h3>
+<div class="badges"><span class="badge cat-video">生视频</span><span class="badge type">代码生成</span><span class="badge ok">✅ 双核验</span></div>
 <p class="desc">用 Opus 5.5 写像素特效——写、渲染、看帧、修到满意为止，232 个特效全是代码、零图片，已全部开源连同 skill。</p>
 <p class="meta">作者：Rehan Sheikh（@rehan_shei） · MIT</p>
 <div class="links"><a href="https://github.com/patch-gg/pixelfx" target="_blank">GitHub ↗</a><a href="https://x.com/rehan_shei/status/2116062680121540611" target="_blank">X 原帖 ↗</a><a href="https://video.twimg.com/amplify_video/2116062497082146816/vid/avc1/1920x1080/PAazJQS5-OOBF95y.mp4?tag=29" target="_blank" rel="noreferrer">参考视频 ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="video" data-search="anidoodle alex 手绘 插画">
-<h3><span class="n">23.</span> anidoodle ✅</h3>
-<div class="badges"><span class="badge cat">生视频</span><span class="badge type">代码生成</span><span class="badge ok">✅ 双核验</span></div>
+<article class="card" data-cat="video" data-n="23" data-search="anidoodle alex 手绘 插画">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://raw.githubusercontent.com/alexgreensh/anidoodle/main/assets/banner.gif" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#23</span> anidoodle ✅</h3>
+<div class="badges"><span class="badge cat-video">生视频</span><span class="badge type">代码生成</span><span class="badge ok">✅ 双核验</span></div>
 <p class="desc">手绘风插画 / 短片 skill，全片逐帧手绘代码生成 + 配乐；32 种手绘风格。</p>
 <p class="meta">作者：Alex Greenshpun（@alexgreensh） · Apache-2.0</p>
 <div class="links"><a href="https://github.com/alexgreensh/anidoodle" target="_blank">GitHub ↗</a><a href="https://x.com/alexgreensh/status/2102458223638810739" target="_blank">X 原帖 ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="video" data-search="design-to-motion elaya 静态 动效">
-<h3><span class="n">24.</span> design-to-motion ✅</h3>
-<div class="badges"><span class="badge cat">生视频</span><span class="badge type">代码生成</span><span class="badge ok">✅ 双核验</span></div>
+<article class="card" data-cat="video" data-n="24" data-search="design-to-motion elaya 静态 动效">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://pbs.twimg.com/media/HVlMzI1b0AA-sgn.png?name=orig" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#24</span> design-to-motion ✅</h3>
+<div class="badges"><span class="badge cat-video">生视频</span><span class="badge type">代码生成</span><span class="badge ok">✅ 双核验</span></div>
 <p class="desc">把静态设计变成可在 X 等平台分享的动画展示（Figma / 截图 → MP4 + GIF）。</p>
 <p class="meta">作者：Elaya（@elayadesigns）</p>
 <div class="links"><a href="https://github.com/elayadesign/ai-design-skills" target="_blank">GitHub ↗</a><a href="https://x.com/elayadesigns/status/2114806587466604676" target="_blank">X 原帖 ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="web" data-search="liquid glass evedensity 折射 玻璃 控件 webgl">
-<h3><span class="n">25.</span> Liquid-Glass-Skill 🟡</h3>
-<div class="badges"><span class="badge cat">网页设计</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
+<article class="card" data-cat="web" data-n="25" data-search="liquid glass evedensity 折射 玻璃 控件 webgl">
+<div class="media"><video controls preload="metadata" playsinline referrerpolicy="no-referrer" src="https://github.com/EVEDensity/Liquid-Glass-Skill/raw/refs/heads/main/docs/media/liquid-glass-ui-demo.mp4"></video><span class="media-chip">▶ 视频 · 点我播放</span></div>
+<div class="body">
+<h3><span class="n">#25</span> Liquid-Glass-Skill 🟡</h3>
+<div class="badges"><span class="badge cat-web">网页设计</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
 <p class="desc">折射按钮、开关、滑杆等液态玻璃控件：本地编辑器调形状 / 材质，Copy for AI 交给 agent 落到现有页面，支持 Codex。</p>
 <p class="meta">作者：EVEDensity · 4★ · MIT</p>
 <div class="links"><a href="https://github.com/EVEDensity/Liquid-Glass-Skill" target="_blank">GitHub ↗</a><a href="https://github.com/EVEDensity/Liquid-Glass-Skill/raw/refs/heads/main/docs/media/liquid-glass-ui-demo.mp4" target="_blank">参考视频 ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="web" data-search="premium frontend director avl05 艺术指导 art direction">
-<h3><span class="n">26.</span> premium-frontend-director 🟡</h3>
-<div class="badges"><span class="badge cat">网页设计</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
+<article class="card" data-cat="web" data-n="26" data-search="premium frontend director avl05 艺术指导 art direction">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://the-art-of-direction.netlify.app/opengraph-image?c7cc00aa92c5b3b7" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#26</span> premium-frontend-director 🟡</h3>
+<div class="badges"><span class="badge cat-web">网页设计</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
 <p class="desc">把创意简报变成有艺术指导的独特前端：方向提案 → 落地实现 → 浏览器实查 → 证据优先交接，Codex 可用。</p>
 <p class="meta">作者：AVL05 · 0★ · MIT</p>
 <div class="links"><a href="https://github.com/AVL05/premium-frontend-director" target="_blank">GitHub ↗</a><a href="https://the-art-of-direction.netlify.app" target="_blank">官网 Showcase ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="web" data-search="variant design yuqingnicole abc 方向 对比">
-<h3><span class="n">27.</span> variant-design-skill 🟡</h3>
-<div class="badges"><span class="badge cat">网页设计</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
+<article class="card" data-cat="web" data-n="27" data-search="variant design yuqingnicole abc 方向 对比">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://raw.githubusercontent.com/YuqingNicole/variant-design-skill/master/assets/sample-A-editorial.png" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#27</span> variant-design-skill 🟡</h3>
+<div class="badges"><span class="badge cat-web">网页设计</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
 <p class="desc">同一份简报在项目内生成 A/B/C 三个完整可比的设计方向，各有取舍说明，改动先快照、可回滚。</p>
 <p class="meta">作者：YuqingNicole · 47★</p>
 <div class="links"><a href="https://github.com/YuqingNicole/variant-design-skill" target="_blank">GitHub ↗</a><a href="https://variant-design-skill.vercel.app/cases" target="_blank">A/B/C 案例站 ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="web" data-search="diagram design cathryn lavery 图表 信息图 svg">
-<h3><span class="n">28.</span> diagram-design 🟡</h3>
-<div class="badges"><span class="badge cat">网页设计</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
+<article class="card" data-cat="web" data-n="28" data-search="diagram design cathryn lavery 图表 信息图 svg">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://raw.githubusercontent.com/cathrynlavery/diagram-design/main/docs/hero/demo.gif" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#28</span> diagram-design 🟡</h3>
+<div class="badges"><span class="badge cat-web">网页设计</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
 <p class="desc">45 种图表画成品牌一致的自包含 HTML+SVG 单文件，拒绝 Mermaid 糙图；支持 Codex。</p>
 <p class="meta">作者：cathrynlavery · 65,818★ · MIT</p>
 <div class="links"><a href="https://github.com/cathrynlavery/diagram-design" target="_blank">GitHub ↗</a><a href="https://diagramdesign.dev" target="_blank">官网 ↗</a><a href="https://cathrynlavery.github.io/diagram-design/" target="_blank">画廊站 ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="web" data-search="nordic civic design capsrock helsinki hds 公共服务 设计系统 token">
-<h3><span class="n">29.</span> nordic-civic-design-skill 🟡</h3>
-<div class="badges"><span class="badge cat">网页设计</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
+<article class="card" data-cat="web" data-n="29" data-search="nordic civic design capsrock helsinki hds 公共服务 设计系统 token">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://raw.githubusercontent.com/capsrock/nordic-civic-design-skill/main/assets/jp/home.png" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#29</span> nordic-civic-design-skill 🟡</h3>
+<div class="badges"><span class="badge cat-web">网页设计</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
 <p class="desc">以赫尔辛基设计系统（HDS 6.0.7）为底的公共服务网页设计 skill：直角、强色、大留白，含现成设计 token，明确支持 Codex。</p>
 <p class="meta">作者：capsrock · 1★ · MIT</p>
 <div class="links"><a href="https://github.com/capsrock/nordic-civic-design-skill" target="_blank">GitHub ↗</a><a href="https://raw.githubusercontent.com/capsrock/nordic-civic-design-skill/main/assets/jp/home.png" target="_blank">参考图 ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="web" data-search="neopop satyam085 cred plunk 按钮 设计语言">
-<h3><span class="n">31.</span> neopop-design-skill 🟡</h3>
-<div class="badges"><span class="badge cat">网页设计</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
+<article class="card" data-cat="web" data-n="31" data-search="neopop satyam085 cred plunk 按钮 设计语言">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://raw.githubusercontent.com/Satyam085/neopop-design-skill/main/preview.png" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#31</span> neopop-design-skill 🟡</h3>
+<div class="badges"><span class="badge cat-web">网页设计</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
 <p class="desc">教 agent 用 CRED 开源设计语言 NeoPOP 做 UI：硬边 3D“plunk”按钮、黑底主色、大胆字体与小写文案，支持 Codex 等。</p>
 <p class="meta">作者：Satyam085 · 0★ · Apache-2.0</p>
 <div class="links"><a href="https://github.com/Satyam085/neopop-design-skill" target="_blank">GitHub ↗</a><a href="https://raw.githubusercontent.com/Satyam085/neopop-design-skill/main/preview.png" target="_blank">参考图 ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="web" data-search="cloudmamba 云曼巴 品牌 设计语言 token">
-<h3><span class="n">32.</span> cloudmamba-design-skill 🟡</h3>
-<div class="badges"><span class="badge cat">网页设计</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
+<article class="card" data-cat="web" data-n="32" data-search="cloudmamba 云曼巴 品牌 设计语言 token">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://raw.githubusercontent.com/KEVqwe/cloudmamba-design-skill/main/assets/previews/texture-comparison.png" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#32</span> cloudmamba-design-skill 🟡</h3>
+<div class="badges"><span class="badge cat-web">网页设计</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
 <p class="desc">把云曼巴品牌语言（配色与字体 token、logo 与角色 SVG、毛边细节）用于官网、产品工作台、PPT、海报与社交封面，明确支持 Codex。</p>
 <p class="meta">作者：KEVqwe · 0★ · 许可证未声明</p>
 <div class="links"><a href="https://github.com/KEVqwe/cloudmamba-design-skill" target="_blank">GitHub ↗</a><a href="https://raw.githubusercontent.com/KEVqwe/cloudmamba-design-skill/main/assets/previews/texture-comparison.png" target="_blank">参考图 ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="web" data-search="digital go capsrock 数字厅 dads 公共服务 设计系统">
-<h3><span class="n">33.</span> digital-go-design-skill 🟡</h3>
-<div class="badges"><span class="badge cat">网页设计</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
+<article class="card" data-cat="web" data-n="33" data-search="digital go capsrock 数字厅 dads 公共服务 设计系统">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://raw.githubusercontent.com/capsrock/digital-go-design-skill/main/assets/jp/home.png" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#33</span> digital-go-design-skill 🟡</h3>
+<div class="badges"><span class="badge cat-web">网页设计</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
 <p class="desc">以日本数字厅设计系统（DADS β版）为底的公共服务网页设计 skill：易读文字、高对比、黄色与黑色焦点框，含现成设计 token，明确支持 Codex。</p>
 <p class="meta">作者：capsrock · 1★</p>
 <div class="links"><a href="https://github.com/capsrock/digital-go-design-skill" target="_blank">GitHub ↗</a><a href="https://raw.githubusercontent.com/capsrock/digital-go-design-skill/main/assets/jp/home.png" target="_blank">参考图 ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="web" data-search="motion design lottiefiles 动效 lottie 缓动 编排">
-<h3><span class="n">34.</span> motion-design（LottieFiles）🟡</h3>
-<div class="badges"><span class="badge cat">网页设计</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
+<article class="card" data-cat="web" data-n="34" data-search="motion design lottiefiles 动效 lottie 缓动 编排">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://lottie.host/cdb5e749-f393-4333-ad23-8200f121e8d3/Z4sIS9xKDC.svg?v=1" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#34</span> motion-design（LottieFiles）🟡</h3>
+<div class="badges"><span class="badge cat-web">网页设计</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
 <p class="desc">通用动效设计原则 skill：先定节奏、缓动、编排与情绪意图再写动画代码，覆盖入场、状态反馈、加载与多元素编排，支持 Codex 等 40+ agent。</p>
 <p class="meta">作者：LottieFiles · 2,927★ · MIT</p>
 <div class="links"><a href="https://github.com/LottieFiles/motion-design-skill" target="_blank">GitHub ↗</a><a href="https://lottie.host/cdb5e749-f393-4333-ad23-8200f121e8d3/Z4sIS9xKDC.svg?v=1" target="_blank">参考动画 ↗</a></div>
 </div>
+</article>
 
-<div class="card" data-cat="video" data-search="idea to motion georgesmomo 动效视频 3d 配乐 旁白 hyperframes">
-<h3><span class="n">30.</span> idea-to-motion 🟡</h3>
-<div class="badges"><span class="badge cat">生视频</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
+<article class="card" data-cat="video" data-n="30" data-search="idea to motion georgesmomo 动效视频 3d 配乐 旁白 hyperframes">
+<div class="media"><img loading="lazy" referrerpolicy="no-referrer" src="https://opengraph.githubassets.com/1/georgesmomo/idea-to-motion" alt="" onerror="this.closest('.media').style.display='none'"><span class="media-chip">🖼 参考图</span></div>
+<div class="body">
+<h3><span class="n">#30</span> idea-to-motion 🟡</h3>
+<div class="badges"><span class="badge cat-video">生视频</span><span class="badge type">代码生成</span><span class="badge">🟡 GitHub 核验</span></div>
 <p class="desc">一句话想法变成带 3D、动效、配乐、旁白的动效视频：14 种风格、16 种体裁，本地渲染、零 API key，明确支持 Codex。</p>
 <p class="meta">作者：Georges MOMO · 0★ · MIT</p>
-<div class="links"><a href="https://github.com/georgesmomo/idea-to-motion" target="_blank">GitHub ↗</a><a href="https://github.com/user-attachments/assets/ff0efe82-d710-40fd-a3be-fa134350524c" target="_blank">参考视频 ↗</a></div>
+<div class="links"><a href="https://github.com/georgesmomo/idea-to-motion" target="_blank">GitHub ↗</a></div>
 </div>
+</article>
 
 </div>
 
@@ -360,18 +490,27 @@ footer{max-width:1080px;margin:40px auto 0;text-align:center;color:var(--muted);
 <p>仓库：<a href="https://github.com/jaxxchen003/awesome-codex-skills" target="_blank">github.com/jaxxchen003/awesome-codex-skills</a> · 每日定时更新 · 完整收录标准与溯源规则见仓库 README</p>
 <p>本页只收录公开 skill 与公开分享，stars 与互动数为核验日快照；每个 skill 的许可证、安装方式以原仓库为准。</p>
 </footer>
-
+</div>
 <script>
-let curFilter='all';
-function setFilter(btn){curFilter=btn.dataset.f;document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');filterCards();}
-function filterCards(){
+let curFilter='all', curSort='new';
+function setFilter(btn){curFilter=btn.dataset.f;document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');apply();}
+function setSort(btn){curSort=btn.dataset.s;document.querySelectorAll('.sort button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');apply();}
+function apply(){
   const q=(document.getElementById('q').value||'').toLowerCase().trim();
-  document.querySelectorAll('.card').forEach(c=>{
+  const grid=document.getElementById('grid');
+  const cards=[...grid.querySelectorAll('.card')];
+  cards.sort((a,b)=>curSort==='new' ? (+b.dataset.n)-(+a.dataset.n) : (+a.dataset.n)-(+b.dataset.n));
+  cards.forEach(c=>grid.appendChild(c));
+  let shown=0;
+  cards.forEach(c=>{
     const okF = curFilter==='all' || c.dataset.cat===curFilter;
     const okQ = !q || (c.dataset.search+' '+c.textContent).toLowerCase().includes(q);
     c.classList.toggle('hidden', !(okF && okQ));
+    if(okF&&okQ) shown++;
   });
+  document.getElementById('count').textContent = shown + ' / 36 条';
 }
+apply();
 </script>
 </body>
 </html>

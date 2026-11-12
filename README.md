@@ -76,7 +76,7 @@
 - **原帖**：https://x.com/nutlope/status/2056754959819915459（2026-05-19，5,488 赞 / 894K 浏览）
 - **仓库**：https://github.com/Nutlope/hallmark（50,106★，2026-11-08 核验，`skills/hallmark/SKILL.md`）
 - **一句话**：50 个主题材质 + 分层门控 + 真实浏览器 sloplint 检查 + 755 张 Wikimedia 授权照片，让 UI 与落地页默认就好看，支持 Codex。
-- **参考视频**：原帖 39.3 秒演示 https://video.twimg.com/amplify_video/2056751127643734016/vid/avc1/1920x1080/5gmXVphI25MlG.mp4?tag=29 ；README 含 10 个主题成品图，官网 usehallmark.com
+- **参考视频**：原帖 39.3 秒演示 https://video.twimg.com/amplify_video/2056751127643734016/vid/avc1/1920x1080/5gmXVphI25MlGBvJ.mp4?tag=27 ；README 含 10 个主题成品图，官网 usehallmark.com
 - **类型**：网页设计
 
 ### 6. frontend-design（Anthropic 官方）🟡
@@ -135,7 +135,7 @@
 - **作者**：EVEDensity
 - **仓库**：https://github.com/EVEDensity/Liquid-Glass-Skill（4★，MIT，2026-11-09 GitHub Search API 核验；创建 2026-11-03，2026-11-08 更新）
 - **一句话**：设计折射按钮、开关、滑杆、分段控件等液态玻璃控件：本地编辑器调形状 / 文字 / 图标 / 材质，Copy for AI 粘贴进 agent 落到现有页面，支持 Codex 与 Claude Code。
-- **参考视频**：README 18 秒产品演示 https://github.com/user-attachments/assets/9c0b9150-876c-46cf-9f29-7a22a7e907b4 ；4K MP4：https://github.com/EVEDensity/Liquid-Glass-Skill/raw/refs/heads/main/docs/media/liquid-glass-ui-demo.mp4
+- **参考视频**：README 18 秒产品演示附件已失效（2026-11-12 复测 404），改用 4K MP4：4K MP4：https://github.com/EVEDensity/Liquid-Glass-Skill/raw/refs/heads/main/docs/media/liquid-glass-ui-demo.mp4
 - **类型**：代码生成（CSS glass / WebGL2 折射，不调图片模型）
 
 ### 26. premium-frontend-director — 高端前端艺术指导 🟡
@@ -264,7 +264,7 @@
 - **原帖**：https://x.com/VincentWei93/status/2079118667074376114（2026-07-20，1,558 赞 / 318K 浏览，中文原帖）
 - **仓库**：https://github.com/Vincentwei1021/video-shotcraft（17,614★，Apache-2.0）
 - **一句话**：用真实页面截图 + 124 张镜头配方卡 / 150 个动态预览，按节拍剪辑 + 音效设计，Remotion 渲染 1080p MP4，可导出剪映草稿。明确支持 Codex。
-- **参考视频**：原帖 36.2 秒演示 https://video.twimg.com/amplify_video/2079118623243960320/vid/avc1/1280x720/DV5UEEk2hvip2Q.mp4?tag=29 ；Gallery 站 150 个动态预览、Showcase 视频、README 20+ 张镜头示例图
+- **参考视频**：原帖演示视频直链已失效（2026-11-12 复测 404），改用 README 工作流动图 https://raw.githubusercontent.com/Vincentwei1021/video-shotcraft/main/assets/readme/workflow.gif ；Gallery 站 150 个动态预览、Showcase 视频、README 20+ 张镜头示例图
 - **类型**：代码生成（Remotion 渲染）
 
 ### 20. brag — 一句话把项目变 launch 视频 🟡
@@ -310,7 +310,7 @@
 - **作者**：Georges MOMO（georgesmomo）
 - **仓库**：https://github.com/georgesmomo/idea-to-motion（0★，2026-11-10 核验；创建 2026-11-09；`skills/idea-to-motion/SKILL.md`，MIT）
 - **一句话**：一句话想法变成带 3D、动效、配乐、旁白的动效视频：14 种风格、16 种体裁，本地渲染、零 API key，明确支持 Codex。
-- **参考视频**：README 顶部 showreel GIF + 7 条演示视频：showreel https://github.com/user-attachments/assets/ff0efe82-d710-40fd-a3be-fa134350524c ；40 秒宇宙科普 https://github.com/user-attachments/assets/9be14847-9370-47bb-9f0e-73bf7f1c15cf ；AURA 产品发布片 https://github.com/user-attachments/assets/3c8a7350-aa9d-4ab6-a800-2d3ff7da92e3
+- **参考视频**：README 所列 showreel GIF + 7 条演示视频附件均已失效（2026-11-12 复测 404），待作者重新上传
 - **类型**：代码生成（HyperFrames + three.js + GSAP 渲染，无图片模型）
 
 ---

@@ -4,7 +4,7 @@
 > 先聚焦 design，后续再扩到其他方向。
 > 仓库：https://github.com/jaxxchen003/awesome-codex-skills
 
-📊 **收录 skill：41** ｜ 🕐 **最后更新：2026-11-13** ｜ 🤖 每日定时更新 ｜ 🌐 **在线预览站：https://jaxxchen003.github.io/awesome-codex-skills/**
+📊 **收录 skill：42** ｜ 🕐 **最后更新：2026-11-13** ｜ 🤖 每日定时更新 ｜ 🌐 **在线预览站：https://jaxxchen003.github.io/awesome-codex-skills/**
 
 ---
 
@@ -30,7 +30,7 @@
 ## 📑 目录
 
 - [🌐 网页设计](#-网页设计)（26）
-- [🖼️ 生图](#️-生图)（6）
+- [🖼️ 生图](#️-生图)（7）
 - [🎬 生视频](#-生视频)（9）
 - [🤝 参与方式](#-参与方式)
 - [⚠️ 免责声明](#️-免责声明)
@@ -275,6 +275,14 @@
 - **参考图**：README 示例 SVG——手绘猴子 logo 转码后效果：https://raw.githubusercontent.com/ChanMeng666/chanmeng-logo-as-code/main/examples/chan-monkey/out/monkey/chan-meng-monkey-black-on-white.svg
 - **类型**：代码生成（SVG 矢量化）
 - **备注**：补录：SkillSpot 2026-11-04 上架，仓库 2026-06 创建、11-06 最后推送，本轮由聚合站线索追溯到原作者后入库。
+
+### 42. gif-factory — GIF 工厂：大字标题、动态签名与表情包 ✅
+- **作者**：Levi 卧云（@Leviwoyun，WoYun520）
+- **原帖**：https://x.com/Leviwoyun/status/2120469968060043639（2026-11-11，1,889 赞 / 115,268 浏览）
+- **仓库**：https://github.com/WoYun520/gif-factory（1,608★，MIT，2026-11-13 核验；创建 2026-11-05，2026-11-12 最后推送；根目录 SKILL.md + skills/ 子 skill）
+- **一句话**：GPT image 2.6 出图的 GIF 工厂：电影片头大字标题（40 种字形）、动态签名 2.0（粒子效果 + 乐器）、表情包、动态海报、光栅变画卡、动态绘本与品牌短片，明确支持 Codex。
+- **参考图**：原帖附图（大字标题设计示例）：https://pbs.twimg.com/media/HW1rljna4AAnSfB.jpg?name=orig ；README 另有像素 / 插画 / 宠物表情包、动态海报等 GIF 演示
+- **类型**：模型生图（GPT image 2.6 出图，产物为 GIF 动图）
 
 ---
 

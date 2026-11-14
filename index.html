@@ -610,7 +610,8 @@ footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);color:v
 <script>
 let curFilter='all', curSort='new';
 function setFilter(btn){curFilter=btn.dataset.f;document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');apply();
-(function(){var el=document.getElementById('starcnt');var ctl=new AbortController();var to=setTimeout(function(){ctl.abort();},6000);fetch('https://img.shields.io/github/stars/jaxxchen003/awesome-codex-skills.json',{signal:ctl.signal}).then(function(r){if(!r.ok) throw new Error('shields '+r.status);return r.json();}).then(function(d){clearTimeout(to);if(d&&d.value!=null){el.textContent=d.value;}else{el.style.display='none';}}).catch(function(){clearTimeout(to);el.style.display='none';});})();}
+
+}
 function setSort(btn){curSort=btn.dataset.s;document.querySelectorAll('.sort button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');apply();}
 function apply(){
   const q=(document.getElementById('q').value||'').toLowerCase().trim();
@@ -628,6 +629,7 @@ function apply(){
   document.getElementById('count').textContent = shown + ' / 46 条';
 }
 apply();
+(function(){var el=document.getElementById('starcnt');var ctl=new AbortController();var to=setTimeout(function(){ctl.abort();},6000);fetch('https://img.shields.io/github/stars/jaxxchen003/awesome-codex-skills.json',{signal:ctl.signal}).then(function(r){if(!r.ok) throw new Error('shields '+r.status);return r.json();}).then(function(d){clearTimeout(to);if(d&&d.value!=null){el.textContent=d.value;}else{el.style.display='none';}}).catch(function(){clearTimeout(to);el.style.display='none';});})();
 </script>
 </body>
 </html>

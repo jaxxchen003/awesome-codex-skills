@@ -4,7 +4,7 @@
 > 先聚焦 design，后续再扩到其他方向。
 > 仓库：https://github.com/jaxxchen003/awesome-codex-skills
 
-📊 **收录 skill：42** ｜ 🕐 **最后更新：2026-11-13** ｜ 🤖 每日定时更新 ｜ 🌐 **在线预览站：https://jaxxchen003.github.io/awesome-codex-skills/**
+📊 **收录 skill：46** ｜ 🕐 **最后更新：2026-11-14** ｜ 🤖 每日定时更新 ｜ 🌐 **在线预览站：https://jaxxchen003.github.io/awesome-codex-skills/**
 
 ---
 
@@ -23,15 +23,15 @@
 - **生图 / 生视频要拆口径：** 分“代码生成”（SVG / HTML / Remotion 渲染，不调图片视频模型）和“模型生成”（调 Nano Banana / gpt-image / Veo / Sora 等）两类，入库时标注清楚，不混着说。
 - **Stars 口径：** 文中 stars 均为 2026-11-08 GitHub API / 仓库页核验值；合集型仓库的 stars 是整个仓库的，不是单个 skill 的，已注明。
 
-> Reddit 线本轮有缺口：2026-11-13 实测 www.reddit.com/new RSS 五个分区首轮 429×3 / 403×2（403 体为 Reddit 拦截页、非 RSS），重试一次全部 429；old.reddit.com 返回 302、api.reddit.com 403——三个路由均未取到帖子列表，本轮 Reddit 覆盖缺失，不编链接。X 线：web search 两轮未发现过去 24 小时内新发布的 design skill 原帖。GitHub Search 本轮 7 次查询（codex design skill / "design skill" codex / motion design skill / logo design skill codex / design skill 三页）共 100 余候选，核验 30 余个仓库后 5 条入库；GitHub API core 配额中途用尽（共享出口 IP 60/小时），abeerkhalique/design-critique-skill 因无 README 且 API 限流未能核验内容，留待下轮。skills.sh 首页已取到（200），今晚候选条目未现身；agentsuses /new 返回 404；open-design.ai 与 SkillsMP 首页未见今晚候选条目；Bles Software Designer Stack 仍无公开 GitHub 原仓库（官网 zip 下载），继续暂缓。
+> Reddit 线本轮仍有缺口：2026-11-14 实测 www.reddit.com/new RSS 五个分区首轮 403×4 / 429×1，重试一次仍 403/429，未取到帖子列表，本轮 Reddit 覆盖缺失，不编链接。X 线：web search 未发现过去 24 小时内新发布的 design skill 原帖（仅 hallmark 评测、PPT skill 聚合文与 skillry 聚合站，无可追溯原作者的新条目）。GitHub Search 本轮 8 次查询（design skill codex / "design skill" codex / motion design skill / logo design skill / codex skill design / ui design skill codex / frontend design skill codex / video skill codex）共 19 个 2026-11-13 新建候选，核验后 4 条入库（anti-slop-ui、four-style-motion-video、viva-video、course-to-feishu-video）；其余 15 条因无参考图/视频、合集型、超范围或无 README 暂缓，见“暂不收录”。skills.sh 首页已取到（200，JS 渲染、静态 HTML 未见新条目）；agentsuses /new 仍 404；open-design.ai 首页已取到（200，未见新条目）；SkillsMP 返回 403，聚合站覆盖有缺口。abeerkhalique/design-critique-skill 2026-11-14 复查仍无 README，继续暂缓。
 
 ---
 
 ## 📑 目录
 
-- [🌐 网页设计](#-网页设计)（26）
+- [🌐 网页设计](#-网页设计)（27）
 - [🖼️ 生图](#️-生图)（7）
-- [🎬 生视频](#-生视频)（9）
+- [🎬 生视频](#-生视频)（12）
 - [🤝 参与方式](#-参与方式)
 - [⚠️ 免责声明](#️-免责声明)
 
@@ -229,6 +229,13 @@
 - **类型**：网页设计 / UI 设计
 - **备注**：工具型（浏览器可视化设计器 + agent skill），非纯指令型 skill。
 
+### 43. anti-slop-ui — 产品向 UI 反俗套 skill 🟡
+- **作者**：erlttt0（erltttttt）
+- **仓库**：https://github.com/erlttt0/anti-slop-ui（0★，MIT，2026-11-14 核验；创建 2026-11-13；`skills/anti-slop-ui/SKILL.md`）
+- **一句话**：让 coding agent 少出“通用 hero + 空洞文案 + 装饰动效”的俗套界面：先理解产品任务、再定方向、修层级、做流程、验结果，附交互 demo（通用自行车服务页 vs 围绕服务/价格/时长/可约时间排布的预约界面）与评审清单，支持 Codex。
+- **参考图**：README 设计原则示意图 https://raw.githubusercontent.com/erlttt0/anti-slop-ui/main/docs/design-principle.svg ；交互前后对比 demo：https://github.com/erlttt0/anti-slop-ui/blob/main/demo/index.html
+- **类型**：代码生成
+
 ---
 
 ## 🖼️ 生图
@@ -359,6 +366,28 @@
 - **类型**：代码生成（逐帧代码渲染，不调视频生成模型；旁白为豆包 TTS、配乐为库乐队采样，需自备密钥 / 仅 macOS）
 - **备注**：宣传片 user-attachments 直链本机 curl 复测 404（GitHub 附件为签发链接，需浏览器会话；仓库页 HTML 内含该视频元素），故卡片用站内 GIF。
 
+### 44. four-style-motion-video — 四类代码动效短片 🟡
+- **作者**：yangwei251003
+- **仓库**：https://github.com/yangwei251003/four-style-motion-video（0★，MIT，2026-11-14 核验；创建 2026-11-13；根目录 SKILL.md）
+- **一句话**：面向 Codex 的动效短片 skill：视觉隐喻、物体状态、变量图解、像素剧情四种画面逻辑按内容选其一，统一事件表排画面与声音，成片按画面/动效/音效三项丰富度验收，Python + FFmpeg 本地渲染 5 秒 MP4。
+- **参考视频**：4 条原创示例——视觉隐喻 https://raw.githubusercontent.com/yangwei251003/four-style-motion-video/main/examples/metaphor.mp4 ；物体状态 https://raw.githubusercontent.com/yangwei251003/four-style-motion-video/main/examples/material.mp4 ；变量图解 https://raw.githubusercontent.com/yangwei251003/four-style-motion-video/main/examples/diagram.mp4 ；像素剧情 https://raw.githubusercontent.com/yangwei251003/four-style-motion-video/main/examples/pixel-story.mp4 ；四镜头预览图 https://raw.githubusercontent.com/yangwei251003/four-style-motion-video/main/examples/preview.png
+- **类型**：代码生成（Python + FFmpeg 渲染，不调视频生成模型）
+
+### 45. viva-video — 产品文档变代码渲染发布片 🟡
+- **作者**：zhangxiang（keepview）
+- **仓库**：https://github.com/keepview/viva-video（0★，许可证未声明，2026-11-14 核验；创建 2026-11-13；根目录 SKILL.md）
+- **一句话**：把产品文档做成每一帧都由代码画出来的产品发布片/机制讲解片：先出理解文档与结论清单、拦住无数字空话、按 OKLCH 从品牌色推导配色、版面与动效检查全过才渲染 4K 成片，4 套主题包（daylight / aurora / azure / keynote），支持 Codex 与 Claude Code。
+- **参考图**：4 张主题效果图——daylight https://raw.githubusercontent.com/keepview/viva-video/main/docs/images/daylight.jpg ；aurora https://raw.githubusercontent.com/keepview/viva-video/main/docs/images/aurora.jpg ；azure https://raw.githubusercontent.com/keepview/viva-video/main/docs/images/azure.jpg ；keynote https://raw.githubusercontent.com/keepview/viva-video/main/docs/images/keynote.jpg
+- **类型**：代码生成（逐帧代码渲染，不带视频生成模型；旁白需自备 TTS）
+
+### 46. course-to-feishu-video — 教学课程分批交付视频 skill 🟡
+- **作者**：flemin86
+- **仓库**：https://github.com/flemin86/course-to-feishu-video（0★，许可证未声明，2026-11-14 核验；创建 2026-11-13；根目录 SKILL.md）
+- **一句话**：教学课程视频制作 skill：大纲 → 飞书图文课件 → 口语化授课稿 → 语义断句 SRT → 实操配词 → 前 2 分钟 Demo → 每批约 10 分钟逐批交付，每步先确认再往下做，明确支持 Codex。
+- **参考视频**：15 秒流程演示（无声，1280×720）https://raw.githubusercontent.com/flemin86/course-to-feishu-video/main/docs/media/workflow-demo.mp4 ；流程图 https://raw.githubusercontent.com/flemin86/course-to-feishu-video/main/docs/media/workflow.png
+- **类型**：代码生成（制作流程编排，不内置视频生成模型）
+- **备注**：README 已声明演示动效为通用流程示意、非软件实录或课程成片。
+
 ---
 
 ## 暂不收录（已查到，缺源头或未核验）
@@ -403,7 +432,22 @@
 - **gollodev/onboarding-paywall-designs**（创建 2026-11-12）：应用 onboarding / 订阅付费墙设计图（PNG）生成 skill，README 含示例图，但仅 Claude Code / claude.ai / Copilot、未提及 Codex，暂不入库。
 - **khizerahmadchohan/elite-design-director**（创建 2026-11-12）：Claude Code 网页设计 skill，README 含示例图，但未提及 Codex，暂不入库。
 - **efalov/super-design**（创建 2026-11-12）：Claude Code 前端设计 skill，有 SKILL.md，但仓库无 README、页面全文未提及 Codex，暂不入库。
-- **abeerkhalique/design-critique-skill**（创建 2026-11-12）：仓库无 README（main/master 均 404），内容未核验；本轮 GitHub API core 配额用尽未能复核，留待下轮。
+- **abeerkhalique/design-critique-skill**（创建 2026-11-12）：仓库无 README（main/master 均 404），内容未核验；2026-11-14 复查仍无 README，继续暂缓。
+- **motionsites-web-design-skill**（garyliu-hecheng，创建 2026-11-13）：Codex 网页 + 3D 落地页设计 skill，但 README 全文无任何参考图 / 视频，暂不入库。
+- **design-forge**（oth54477，创建 2026-11-13）：设计发现与多方案比较 skill，SKILL.md 已核验、明确支持 Codex，但 README 无参考图 / 视频，暂不入库。
+- **ai-skills**（yan054726-hash，创建 2026-11-13）：Codex skill 合集（含品牌视觉设计与 UI 本地化），合集型且 README 仅 95 字、无参考图 / 视频，暂不入库。
+- **prd-writing-skill**（yeyoushen-03，创建 2026-11-13）：PRD / 产品设计 / 测试文档 skill，超出网页设计 / 生图 / 生视频范围，暂不入库。
+- **b30-design-hub**（Seanfo2332，创建 2026-11-13）：网页设计 / 动效 / 3D skill 安装中心，合集型且 README 无参考图 / 视频，暂不入库。
+- **skill-awesome-opus5-5-videos**（eli-ovops，创建 2026-11-13）：从 awesome-opus5-5-videos 合集找创意代码动画提示词的 Codex skill，但 README 无参考图 / 视频，暂不入库。
+- **videos**（shener141，创建 2026-11-13）：电影感 2D 动画 Codex skill 库，README 明言“这里没有视频、渲染与视频项目”，无参考图 / 视频，暂不入库。
+- **atelier-ui**（yashh1323，创建 2026-11-13）：与 2026-11-09 暂缓的 caicaichuangzhao 版同名不同作者；SKILL.md 已核验、明确支持 Codex，但 README 仅有 CI / 徽章图、无演示截图，暂不入库。
+- **DesignBookmark-Motion-SKILL**（refaxD，创建 2026-11-13）：按 DesignBookmark 动效目录选组件出动效的 skill，明确支持 Codex，但 README 全文 836 字、无参考图 / 视频，暂不入库。
+- **apple-fluid-design**（christianaboujaoudeh，创建 2026-11-13）：Apple 风格应用设计 skill，README 含 2 张截图、SKILL.md 已核验，但全文只提 Claude、未提及 Codex，暂不入库。
+- **h3-continuity-production**（liuyang7567，创建 2026-11-13）：MiniMax H3 连续镜头制作 Codex skill，但 README 无参考图 / 视频，暂不入库。
+- **clip-short**（magebase，创建 2026-11-13）：AI 短视频剪辑 skill，支持 codex，但 README 仅有徽章图、无参考图 / 视频，暂不入库。
+- **cts17-video-script**（C17-skills，创建 2026-11-13）：短视频口播脚本 skill，偏文案写作、超出范围，且 README 无参考图 / 视频，暂不入库。
+- **vidnavigator/skills**（创建 2026-11-13）：给 agent 看在线视频并回答的工具型 skill，属视频理解、超出范围，暂不入库。
+- **ilands-agent-story-video**（meryluo410-bot，创建 2026-11-13）：仓库无 README，内容未核验，暂不入库。
 - **hanpage-ai/leonxlnx-design-taste-frontend-skill**（创建 2026-11-12）：第 8 条 taste-skill 的韩文复刻 / 翻译，非原作者，不另收。
 - **adymire/CraftLayer、doko89/design-skills、furkansenturk/claude-skills、tuanesxyz/skills、jmackow/skills、neromtoobad/creator-skills、dewwc/webdev-playbook、Kaifrizwan12/nazar-studio、jijinglong/skills**（创建 2026-11-12）：合集型仓库（内含多个 skill），不单条入库；其中 jijinglong/skills 的 ai-video-directing（Seedance 提示词 + AI 视频导演）可后续专项核验。
 - **dlrs108/Reverse1999_UI_skill、Shashank33549/stickman-animation、Enghc1115/video-costume-design、eb-ekeledo/feel-skill、issei-fujimoto-accelia/uiux_design_skill、murilohennemannuphold/design-critique-jam、vicyap/design-sprites、UtomoAbimail/ui-ux-design-principle、greatopomu/claude-assets、ReL4xi0n/m3-forge、AwsGames-byte/cinematic-glass-web-vitrine**（创建 2026-11-12）：未提及 Codex 和 / 或 README 无参考图 / 视频，暂不入库（其中 cinematic-glass-web-vitrine 有封面图与两条演示视频，但未提及 Codex）。
@@ -438,4 +482,4 @@
 
 ---
 
-*核验日期：2026-11-13。每日定时更新：新增 skill 经核验后入库，0 新增也汇报当日扫描情况。*
+*核验日期：2026-11-14。每日定时更新：新增 skill 经核验后入库，0 新增也汇报当日扫描情况。*

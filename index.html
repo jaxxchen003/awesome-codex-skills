@@ -70,10 +70,10 @@ footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);color:v
 <h1>给 Codex 的<br><em>设计灵感库</em></h1>
 <p class="lede">65 个经过溯源核验的设计类 skill：网页设计、生图、生视频。来源只写原始作者，聚合站只当线索；每张卡片都带上它自己的参考图或演示视频。</p>
 <div class="stats">
-<div class="stat"><b>65</b> <span>收录 skill</span></div>
+<div class="stat"><b>66</b> <span>收录 skill</span></div>
 <div class="stat"><b>33</b> <span>网页设计</span></div>
 <div class="stat"><b>8</b> <span>生图</span></div>
-<div class="stat"><b>24</b> <span>生视频</span></div>
+<div class="stat"><b>25</b> <span>生视频</span></div>
 <div class="stat"><b>2026-11-17</b> <span>最后更新</span></div>
 <a class="star-btn" href="https://github.com/jaxxchen003/awesome-codex-skills" target="_blank" rel="noreferrer"><span class="star">★</span> Star on GitHub <span class="count" id="starcnt">…</span></a>
 </div>
@@ -89,7 +89,7 @@ footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);color:v
 <button class="active" data-s="new" onclick="setSort(this)">最新在前</button>
 <button data-s="old" onclick="setSort(this)">最早在前</button>
 </div>
-<span id="count" style="color:var(--muted);font-size:.88rem">65 / 65 条</span>
+<span id="count" style="color:var(--muted);font-size:.88rem">66 / 66 条</span>
 </div>
 <p class="note">也适用于除 Codex 之外的其他 Agent。</p>
 
@@ -795,6 +795,17 @@ footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);color:v
 <div class="links"><a href="https://github.com/alchaincyf/huashu-art-motion" target="_blank">GitHub ↗</a><a href="https://raw.githubusercontent.com/alchaincyf/huashu-art-motion/main/assets/showcase/hero.png" target="_blank">参考图 ↗</a></div>
 </div>
 </article>
+<article class="card" data-cat="video" data-n="66" data-search="design style guanmo 观默 风格 动效短片 remotion 宣传视频">
+<div class="media"><video controls preload="metadata" playsinline referrerpolicy="no-referrer" src="https://video.twimg.com/amplify_video/2121929485213978625/vid/avc1/1920x1080/bsLQIR1R_Fl7-VWg.mp4?tag=29"></video><span class="media-chip">▶ 视频 · 点我播放</span></div>
+<div class="body">
+<h3><span class="n">#66</span> design-style ✅</h3>
+<div class="badges"><span class="badge cat-video">生视频</span><span class="badge type">代码生成</span><span class="badge ok">✅ 双核验</span></div>
+<p class="desc">每天一个设计风格：一支 15–20 秒动效短片 + 风格图 + 制作指南，完整源码开放；style-film skill 教 agent 从一个词做出一期新片，Remotion 代码渲染。</p>
+<p class="meta">作者：观默（@guanmo_ai） · 399★ · 许可证未声明</p>
+<div class="links"><a href="https://github.com/guanmo-ai/design-style" target="_blank">GitHub ↗</a><a href="https://x.com/guanmo_ai/status/2122178093217423669" target="_blank" rel="noreferrer">X 原帖 ↗</a><a href="https://video.twimg.com/amplify_video/2121929485213978625/vid/avc1/1920x1080/bsLQIR1R_Fl7-VWg.mp4?tag=29" target="_blank" rel="noreferrer">参考视频 ↗</a></div>
+</div>
+</article>
+
 
 </div>
 
@@ -822,7 +833,7 @@ function apply(){
     c.classList.toggle('hidden', !(okF && okQ));
     if(okF&&okQ) shown++;
   });
-  document.getElementById('count').textContent = shown + ' / 65 条';
+  document.getElementById('count').textContent = shown + ' / 66 条';
 }
 apply();
 (function(){var el=document.getElementById('starcnt');var ctl=new AbortController();var to=setTimeout(function(){ctl.abort();},6000);fetch('https://img.shields.io/github/stars/jaxxchen003/awesome-codex-skills.json',{signal:ctl.signal}).then(function(r){if(!r.ok) throw new Error('shields '+r.status);return r.json();}).then(function(d){clearTimeout(to);if(d&&d.value!=null){el.textContent=d.value;}else{el.style.display='none';}}).catch(function(){clearTimeout(to);el.style.display='none';});})();

@@ -4,7 +4,7 @@
 > 先聚焦 design，后续再扩到其他方向。
 > 仓库：https://github.com/jaxxchen003/awesome-codex-skills
 
-📊 **收录 skill：65** ｜ 🕐 **最后更新：2026-11-17** ｜ 🤖 每日定时更新 ｜ 🌐 **在线预览站：https://jaxxchen003.github.io/awesome-codex-skills/**
+📊 **收录 skill：66** ｜ 🕐 **最后更新：2026-11-17** ｜ 🤖 每日定时更新 ｜ 🌐 **在线预览站：https://jaxxchen003.github.io/awesome-codex-skills/**
 
 ---
 
@@ -28,6 +28,8 @@
 > 2026-11-15：本轮新增 6 条（#47 frontend-ux-motion-skills、#48 mermaid-design、#49 clip-builder、#50 gpt-hand-drawing-skill、#51 video-3d-explicativo、#52 hyperframes-video-polish）。GitHub Search 本轮 8 次查询共 24 个 2026-11-14 新建候选，核验后 6 条入库；其余 18 条因无参考图/视频、合集型、超范围、Codex 支持待定或无 README 暂缓，见“暂不收录”。Reddit 线本轮仍有缺口：www.reddit.com/new RSS 五个分区首轮 403×4 / 429×1，重试一次仍 403/429，未取到帖子列表，本轮 Reddit 覆盖缺失，不编链接。X 线：web search 未发现过去 24 小时内新发布的 design skill 原帖（仅 logo-design-skill 报道、unslop 评测、hallmark 评测等已收条目，无可追溯原作者的新条目）。skills.sh 首页已取到（200，跟随 308 跳转后 903KB，JS 渲染、静态 HTML 未见新条目）；agentsuses /new 仍 404；open-design.ai 首页已取到（200，未见新条目）；SkillsMP 返回 403，聚合站覆盖有缺口。abeerkhalique/design-critique-skill 2026-11-17 复查仍无 README，继续暂缓。
 
 > 2026-11-17：本轮新增 13 条（#53 design-taste-skills、#54 anti-ai-slop、#55 antheo-design/skills、#56 classic-aero-ui、#57 cartoon-jake-skill、#58 Beatreel、#59 shortform-kinetic-typography、#60 codex-motions-movie、#61 muri-skills、#62 guiji-marble-video，另补录 3 条：#63 motion2code、#64 motion-skill、#65 huashu-art-motion）。GitHub Search 本轮 8 次查询共 52 个 2026-11-15/16 新建候选，核验后 10 条入库；其余 42 条因无参考图 / 视频、合集型、超范围、仅徽章 / 标题横幅图或无 README 暂缓，见“暂不收录”。Reddit 线本轮仍有缺口：www.reddit.com/new RSS 五个分区首轮 403×5，重试一次仍 403，未取到帖子列表，本轮 Reddit 覆盖缺失，不编链接。X 线：web search 未发现过去 24 小时内新发布的 design skill 原帖（仅已收条目的 logo-design-skill 报道、unslop 评测、video-shotcraft 报道与 agentsuses 动效合集，无可追溯原作者的新条目）；agentsuses 动效合集另带出 motion2code、motion-skill、huashu-art-motion 三条补录。skills.sh 首页已取到（200，JS 渲染、静态 HTML 未见新条目）；agentsuses /new 仍 404；open-design.ai 首页已取到（200，静态 HTML 未见新条目）；SkillsMP 返回 403，聚合站覆盖有缺口。abeerkhalique/design-critique-skill 2026-11-17 复查仍无 README，继续暂缓。
+>
+> 2026-11-17 晚：chen 指定收录 #66 design-style（@guanmo_ai 原帖 + GitHub 双核验 ✅）。
 
 ---
 
@@ -35,7 +37,7 @@
 
 - [🌐 网页设计](#-网页设计)（33）
 - [🖼️ 生图](#️-生图)（8）
-- [🎬 生视频](#-生视频)（24）
+- [🎬 生视频](#-生视频)（25）
 - [🤝 参与方式](#-参与方式)
 - [⚠️ 免责声明](#️-免责声明)
 
@@ -539,6 +541,15 @@
 - **参考图**：电影画廊总览 https://raw.githubusercontent.com/alchaincyf/huashu-art-motion/main/assets/showcase/hero.png
 - **类型**：代码生成（参数化代码动画，不调视频生成模型）
 - **备注**：补录：2026-10-06 创建，本轮由 agentsuses 动效合集线索追溯到原作者后入库。
+
+### 66. design-style — 每天一个设计风格：动效短片 + 风格图 + 制作指南 ✅
+- **作者**：观默（@guanmo_ai）
+- **原帖**：https://x.com/guanmo_ai/status/2122178093217423669（2026-11-16，239 赞 / 13,700 浏览）
+- **仓库**：https://github.com/guanmo-ai/design-style（399★，许可证未声明，2026-11-17 核验；创建 2026-10-20；.claude/skills/style-film/SKILL.md）
+- **一句话**：每天一个设计风格：一支 15–20 秒动效短片 + 风格图 + 制作指南，完整源码开放；style-film skill 教 agent 从一个词做出一期新片（马克笔手绘、新艺术运动、毛绒、水墨、液态金属等多期已上架），Remotion 代码渲染。
+- **参考视频**：原帖宣传视频 https://video.twimg.com/amplify_video/2121929485213978625/vid/avc1/1920x1080/bsLQIR1R_Fl7-VWg.mp4?tag=29
+- **类型**：代码生成（Remotion 代码渲染，不调视频生成模型）
+- **备注**：chen 2026-11-17 指定收录；skill 放在 .claude/skills/ 下（为 Claude 写），按本站“也适用于除 Codex 之外的其他 Agent”口径收录。
 
 ---
 

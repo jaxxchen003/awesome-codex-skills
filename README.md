@@ -4,7 +4,7 @@
 > 先聚焦 design，后续再扩到其他方向。
 > 仓库：https://github.com/jaxxchen003/awesome-codex-skills
 
-📊 **收录 skill：83** ｜ 🕐 **最后更新：2026-11-19** ｜ 🤖 每日定时更新 ｜ 🌐 **在线预览站：https://jaxxchen003.github.io/awesome-codex-skills/**
+📊 **收录 skill：94** ｜ 🕐 **最后更新：2026-11-20** ｜ 🤖 每日定时更新 ｜ 🌐 **在线预览站：https://jaxxchen003.github.io/awesome-codex-skills/**
 
 ---
 
@@ -33,15 +33,15 @@
 >
 > 2026-11-18：本轮新增 4 条（#67 viral-hook-reels、#68 craft、#69 motion-director、#70 cinematic-skill；其中 #68–#70 为 hotskills.new 线索追溯到的补录）。GitHub Search 本轮 8 次查询共 15 个 2026-11-17 新建候选，核验后 1 条入库（viral-hook-reels）；其余 14 条因无参考图 / 视频、合集型或超出范围暂缓，见“暂不收录”。Reddit 线本轮仍有缺口：www.reddit.com/new RSS 五个分区首轮 403×5，重试一次仍 403，未取到帖子列表，本轮 Reddit 覆盖缺失，不编链接。X 线：web search 未发现过去 24 小时内新发布的 design skill 原帖（仅 Google Stitch skills 旧库与 hotskills.new 聚合页，无可追溯原作者的新条目）。skills.sh 首页已取到（200，JS 渲染、静态 HTML 未见新条目）；agentsuses /new 仍 404；open-design.ai 首页已取到（200，未见新条目）；SkillsMP 返回 403，聚合站覆盖有缺口。abeerkhalique/design-critique-skill 2026-11-18 复查仍无 README，继续暂缓。
 >
-> 2026-11-19：本轮新增 13 条（#71 figcraft-skills、#72 asmr-squeeze-prompts、#73 open-higgsfield-skills、#74 brief2mp4、#75 unslopovich、#76 design-canvas、#77 kubai-icons、#78 music-mv、#79 open-3d-skills、#80 carl-motion、#81 arch-diagram-skill、#82 vvv、#83 stack-diagram；其中 #71–#72 为 2026-11-18 新建，#73–#83 为 hotskills.dev 线索追溯到的补录）。GitHub Search 本轮 8 次查询共 26 个 2026-11-18 新建候选，核验后 2 条入库；其余 24 条因无参考图 / 视频、合集型、超范围、未提及 Codex 或非 skill 暂缓，见“暂不收录”。Reddit 线本轮仍有缺口：www.reddit.com/new RSS 五个分区首轮 429×4 / 404×1，重试一次仍 429×4 / 404×1，未取到帖子列表，本轮 Reddit 覆盖缺失，不编链接。X 线：web search 未发现过去 24 小时内新发布的 design skill 原帖（仅已收条目的 logo-design-skill、hallmark、ai-design-skills 报道，无可追溯原作者的新条目）。skills.sh 首页已取到（200，跟随 308 后 925KB，静态 HTML 未见新条目）；agentsuses /new 仍 404；open-design.ai 首页已取到（200，与 2026-11-17 逐字节相同、无新条目）；SkillsMP 返回 403，聚合站覆盖有缺口。hotskills.new 域名解析失败（DNS 未解析），改走 hotskills.dev/new 核验（200）；页内另有约 10 条未渲染出仓库名的条目无法逐条核验，留作覆盖缺口。abeerkhalique/design-critique-skill 2026-11-19 复查仍无 README，继续暂缓。
+> 2026-11-20：本轮新增 11 条（#84 vibedesign-skills、#85 hudesign-design-skill、#86 nativetap、#87 markitui、#88 motion-explainer、#89 viewgum-skills，均为 2026-11-19 新建；另补录 5 条：#90 design-engineering、#91 flawless-ui-ux、#92 huashu-motion、#93 live-panel-skill、#94 guizang-product-video-skill）。GitHub Search 本轮 8 次查询共 26 个 2026-11-19 新建候选，核验后 6 条入库；其余 20 条因无参考图 / 视频、合集型、超范围、未提及 Codex 或无 README 暂缓，见“暂不收录”。Reddit 线本轮仍有缺口：www.reddit.com/new RSS 五个分区首轮 429×4 / 404×1，重试一次仍 429×4 / 404×1，未取到帖子列表，本轮 Reddit 覆盖缺失，不编链接。X 线：web search 未发现过去 24 小时内新发布的 design skill 原帖（仅已收条目的 unslop、hallmark 评测与 motion-skill、motion2code 报道，无可追溯原作者的新条目）。skills.sh 首页已取到（200，JS 渲染、静态 HTML 未见新条目）；agentsuses /new 仍 404（motion-graphics 分类页 200，带出 huashu-motion、live-panel-skill、guizang-product-video-skill 三条补录）；open-design.ai 首页已取到（200，未见新条目）；SkillsMP 直连失败（000）、走代理 403，聚合站覆盖有缺口。hotskills.dev/new 已取到（200，页脚日期非新 skill，带出 design-engineering、flawless-ui-ux 两条补录）。abeerkhalique/design-critique-skill 2026-11-20 复查：仓库仍为空（GitHub API 409 Repository is empty），继续暂缓。
 
 ---
 
 ## 📑 目录
 
-- [🌐 网页设计](#-网页设计)（40）
+- [🌐 网页设计](#-网页设计)（47）
 - [🖼️ 生图](#️-生图)（9）
-- [🎬 生视频](#-生视频)（34）
+- [🎬 生视频](#-生视频)（38）
 - [🤝 参与方式](#-参与方式)
 - [⚠️ 免责声明](#️-免责声明)
 
@@ -345,6 +345,61 @@
 - **参考图**：Next.js+Vercel 架构总览 https://raw.githubusercontent.com/caru-ini/stack-diagram/main/docs/hero.png ；另有工具链、AI 应用、AWS/GCP/Azure 示例图
 - **类型**：代码生成（HTML/SVG 架构图）
 - **备注**：补录：2026-11-01 创建，本轮由 hotskills.dev 线索追溯到原作者后入库。
+
+### 84. vibedesign-skills — Vibe Design Tips 设计规则与动效 skill 包 🟡
+- **作者**：kubai087（Kubai，Vibe Design Tips 系列作者；#77 kubai-icons 同作者）
+- **仓库**：https://github.com/kubai087/vibedesign-skills（2★，许可证未声明，2026-11-20 核验；创建 2026-11-19；`skills/kubai-design-tips/SKILL.md`）
+- **一句话**：Vibe Design Tips 系列的设计技巧 skill 版：每条技巧是一条设计规则或一个动效、附可在线打开的 live demo，agent 可按编号点名调用、也可整站评审 UI，支持 Codex。
+- **参考图**：官网总览 https://vibedesign.tips ；各技巧 live demo：https://vibedesign.tips/001-skeuomorphic-buttons/ 等
+- **类型**：代码生成（设计规则与动效）
+- **备注**：合集型仓库（kubai-design-tips 主 skill + 每条技巧各一个子 skill），按本库既往口径以单个条目收录。
+
+### 85. hudesign-design-skill — TikTok Hủ Design 图形设计 / UI-UX 公式 skill 🟡
+- **作者**：Tuyen2004-08
+- **仓库**：https://github.com/Tuyen2004-08/hudesign-design-skill（1★，许可证未声明，2026-11-20 核验；创建 2026-11-19；`skills/hudesign-design-skill/SKILL.md`）
+- **一句话**：把 TikTok 频道 Hủ Design（@hudesign，43.5K 粉丝）的图形设计 / UI-UX 方法标准化为 Codex skill：9 套布局 + 6 类网格、Card UI/UX、前后对比公式、90°/180° 渐变律与字体分组，配 6 张 SVG 蓝图与可视化 playbook，支持 Codex。
+- **参考图**：6 张 SVG 蓝图——布局与网格 https://raw.githubusercontent.com/Tuyen2004-08/hudesign-design-skill/main/skills/hudesign-design-skill/assets/diagrams/01_layouts_and_grids.svg ；另有前后对比、Card UI、渐变配色等 5 张
+- **类型**：代码生成（版式 / 网格 / 配色公式，不调图片模型）
+- **备注**：公式源自 TikTok @hudesign 频道的 47 条视频分析（仓库附 25 条视频参考台账与频道目录）；README 为越南语。
+
+### 86. nativetap — 移动端 UI/UX 设计智能 skill 🟡
+- **作者**：awaisdev5765
+- **仓库**：https://github.com/awaisdev5765/nativetap（2★，MIT，2026-11-20 核验；创建 2026-11-19；`.claude/skills/nativetap/SKILL.md`）
+- **一句话**：只做移动端的 UI/UX 设计 skill：Apple HIG、Material 3、Flutter/SwiftUI/Kotlin 规范、手势、安全区、深色模式、动效时长与商店素材，均作可检索的本地数据，支持 Codex 等多 agent。
+- **参考图**：终端检索示例 https://raw.githubusercontent.com/awaisdev5765/nativetap/main/assets/search.png
+- **类型**：网页设计 / 移动 UI 设计（设计规范数据）
+
+### 87. markitui — MarkitUI Figma 设计系统 skill 包 🟡
+- **作者**：studio-coal
+- **仓库**：https://github.com/studio-coal/markitui（0★，许可证未声明，2026-11-20 核验；创建 2026-11-19；`skills/*/SKILL.md`，4 个 skill）
+- **一句话**：教 agent 用 MarkitUI（营销网站与在线商店的 Figma 设计系统）做事：品牌转主题、按区块搭页面、变量同步到 Tailwind CSS v4、区块转 React + Tailwind 组件，支持 Codex（需接 Figma MCP）。
+- **参考图**：仓库 opengraph 预览图 https://opengraph.githubassets.com/1/studio-coal/markitui（2026-11-20 实测 200；仓库本身无截图）
+- **类型**：网页设计 / 设计系统（Figma 设计系统）
+- **备注**：合集型仓库（4 个 skill），按本库既往口径以单个条目收录；需自有 MarkitUI Figma 文件副本。
+
+### 90. design-engineering — 设计工程 skill 图：13 个 agent + 跨模型评审会 🟡
+- **作者**：AgentsORG
+- **仓库**：https://github.com/AgentsORG/design-engineering（13★，MIT，2026-11-20 核验；创建 2026-11-10；`skills/design-engineering/SKILL.md`）
+- **一句话**：把「UI 感觉对」写成 agent 可执行的 skill 图：13 个专家 agent 自查、跨模型设计评审会、评分器与基准测试，覆盖布局、排版、配色、动效与评审，支持 Codex。
+- **参考图**：品味分支示例总览 https://raw.githubusercontent.com/AgentsORG/design-engineering/main/docs/readme/img/pov-gallery.png ；评审截图 https://raw.githubusercontent.com/AgentsORG/design-engineering/main/docs/readme/img/de-review.png
+- **类型**：代码生成（设计工程 skill 图）
+- **备注**：补录：2026-11-10 创建，本轮由 hotskills.dev 线索追溯到原作者后入库；2026-11-19 轮暂缓时误判 README 媒体仅品牌与基准图表，本轮复核含评审截图与品味分支示例图，改判入库；合集型仓库（skill 图 + 13 个 agent），按本库既往口径以单个条目收录。
+
+### 91. flawless-ui-ux — 围绕受众 / 内容 / 身份做界面的 UI/UX skill 🟡
+- **作者**：smokeeaasd
+- **仓库**：https://github.com/smokeeaasd/flawless-ui-ux（252★，MIT，2026-11-20 核验；创建 2026-11-03；`skills/flawless-ui-ux/SKILL.md`）
+- **一句话**：给 coding agent 的 UI/UX skill：围绕产品的受众、内容与身份做界面，含 27 个参考与 10 个实操案例，附前后对比，支持 Codex。
+- **参考图**：前后对比——用 skill 的金融页 https://raw.githubusercontent.com/smokeeaasd/flawless-ui-ux/main/docs/assets/fintech-with-skill.png ；不用 skill 的对照 https://raw.githubusercontent.com/smokeeaasd/flawless-ui-ux/main/docs/assets/fintech-without-skill.png
+- **类型**：代码生成
+- **备注**：补录：2026-11-03 创建，本轮由 hotskills.dev 线索追溯到原作者后入库。
+
+### 93. live-panel-skill — 一份 JSON 配置变终端风动态架构图 🟡
+- **作者**：ythx-101
+- **仓库**：https://github.com/ythx-101/live-panel-skill（871★，MIT，2026-11-20 核验；创建 2026-10-03；根目录 SKILL.md）
+- **一句话**：一份 JSON 配置（或 Excalidraw 文件）渲染成终端风动态架构图：数据包沿连线流动、日志滚动、计数器跳动，输出 H.264 MP4 或自循环网页，画幅预设适配 X 与小红书，支持 Codex。
+- **参考图**：极简示例动态预览 https://raw.githubusercontent.com/ythx-101/live-panel-skill/main/examples/minimal/preview.webp ；另有 agent 架构、Airbnb、漏斗等 8 个示例预览
+- **类型**：代码生成（JSON 配置渲染 MP4/HTML 动态架构图）
+- **备注**：补录：2026-10-03 创建，本轮由 agentsuses 动效合集线索追溯到原作者后入库。
 
 ---
 
@@ -687,6 +742,37 @@
 - **类型**：代码生成（模板本地渲染，不调视频生成模型）
 - **备注**：补录：2026-10-22 创建，本轮由 hotskills.dev 线索追溯到原作者后入库。
 
+### 88. motion-explainer — 中文解说视频：图文稿变带旁白字幕的 MP4 🟡
+- **作者**：baijianyu1024-cmd
+- **仓库**：https://github.com/baijianyu1024-cmd/motion-explainer（0★，MIT，2026-11-20 核验；创建 2026-11-19；`skills/motion-explainer/SKILL.md`）
+- **一句话**：把图文稿或口述做成中文解说视频：按原稿写口播、编排镜头、按旁白时间生成字幕与 MP4，讲到哪个节点放大哪个，附逐镜检查的离线 HTML，支持 Codex。
+- **参考视频**：动画预览 GIF https://raw.githubusercontent.com/baijianyu1024-cmd/motion-explainer/main/media/agent-architecture.gif ；完整有声样片 MP4 https://raw.githubusercontent.com/baijianyu1024-cmd/motion-explainer/main/media/agent-architecture.mp4
+- **类型**：代码生成（镜头编排 + 字幕成片；旁白为豆包 TTS，需自备密钥）
+
+### 89. viewgum/skills — 竖版短视频生成 skill（ViewGum 服务）🟡
+- **作者**：viewgum
+- **仓库**：https://github.com/viewgum/skills（0★，MIT，2026-11-20 核验；创建 2026-11-19；`skills/viewgum-shorts/SKILL.md` 与 `skills/short-form-specs/SKILL.md`）
+- **一句话**：两个竖版短视频 skill：viewgum-shorts 经 ViewGum 连接器制作、编辑与导出竖版短片（先报价、确认后才扣费），short-form-specs 给出 TikTok / Shorts / Reels 安全区与时长字数规范，支持 Codex。
+- **参考图**：连接器页面截图 https://raw.githubusercontent.com/viewgum/skills/main/docs/connect-page.png
+- **类型**：模型生成（ViewGum 服务生成竖版短片，需付费计划与积分）
+- **备注**：工具型（短视频生成服务 + 规范 skill）；short-form-specs 本身免费离线可用。
+
+### 92. huashu-motion — 一键出商业级产品宣传片：做动画、作曲、指着画面改 🟡
+- **作者**：alchaincyf（#65 huashu-art-motion 同作者）
+- **仓库**：https://github.com/alchaincyf/huashu-motion（2,890★，MIT，2026-11-20 核验；创建 2026-10-18；`skills/huashu-motion/SKILL.md`）
+- **一句话**：一句话给产品做 30 秒发布片：agent 先读产品给三个方向、写整片、自己写谱配乐，浏览器编辑器里点画面改局部，支持 Codex。
+- **参考视频**：发布片开场 GIF https://raw.githubusercontent.com/alchaincyf/huashu-motion/main/docs/media/hero.gif ；另有指着画面改、Grok Bot / DeepSeek / Claude Duet 等多支示例 GIF
+- **类型**：代码生成（浏览器编辑器渲染 + 写谱配乐）
+- **备注**：补录：2026-10-18 创建，本轮由 agentsuses 动效合集线索追溯到原作者后入库；同作者 huashu-art-motion 已收（第 65 条）。
+
+### 94. guizang-product-video-skill — 复用真实产品组件做软件更新宣传片 🟡
+- **作者**：op7418（归藏）
+- **仓库**：https://github.com/op7418/guizang-product-video-skill（964★，AGPL-3.0，2026-11-20 核验；创建 2026-09-18；根目录 SKILL.md）
+- **一句话**：把代码库交给 agent、告诉它这次更新了什么，就出一支软件更新宣传片：整理卖点、写文案、接入原组件与设计语言做动画、写配乐配音效，导出视频与可继续改的工程，支持 Codex。
+- **参考图**：宣传片主题图 https://raw.githubusercontent.com/op7418/guizang-product-video-skill/main/assets/readme/hero.jpg ；另有组件与音频示例图
+- **类型**：代码生成（复用真实产品组件渲染）
+- **备注**：补录：2026-09-18 创建，本轮由 agentsuses 动效合集线索追溯到原作者后入库；许可证为 AGPL-3.0，另有商业授权说明（COMMERCIAL_LICENSING.md），使用前请读原仓库 LICENSE。
+
 ---
 
 ## 暂不收录（已查到，缺源头或未核验）
@@ -731,10 +817,10 @@
 - **gollodev/onboarding-paywall-designs**（创建 2026-11-12）：应用 onboarding / 订阅付费墙设计图（PNG）生成 skill，README 含示例图，但仅 Claude Code / claude.ai / Copilot、未提及 Codex，暂不入库。
 - **khizerahmadchohan/elite-design-director**（创建 2026-11-12）：Claude Code 网页设计 skill，README 含示例图，但未提及 Codex，暂不入库。
 - **efalov/super-design**（创建 2026-11-12）：Claude Code 前端设计 skill，有 SKILL.md，但仓库无 README、页面全文未提及 Codex，暂不入库。
-- **abeerkhalique/design-critique-skill**（创建 2026-11-12）：仓库无 README（main/master 均 404），内容未核验；2026-11-18 复查仍无 README，继续暂缓。
+- **abeerkhalique/design-critique-skill**（创建 2026-11-12）：仓库无 README（main/master 均 404），内容未核验；2026-11-18 复查仍无 README，继续暂缓。2026-11-20 复查：仓库仍为空（GitHub API 409 Repository is empty），继续暂缓。
 - **2026-11-17 新建候选、无参考图 / 视频暂缓**：Melvynx/ai-design-pro（法语 AI 设计培训 skill）、connectjeff/learning-design（教学内容设计 skill）、jwexler10/apple-skill（Apple 风格产品设计 skill）、lukelul/video-production-skills（YouTube / Shorts 视频制作 skill 合集）、monohoshi1991/thai-rules-horror-video-skills（泰式恐怖规则短视频 skill，README 仅 853 字）、wildmai/video-skills（视频创作工具箱合集）、gnipbao/rural-cat-video-skill（田园双猫短片 skill）、yuyuexiangshou-rgb/pendulum-beat-video（钟摆卡点成片 skill）、igorcacerez/grok-imagine-video-director（Grok Imagine 提示词 skill，无 SKILL.md）、ricka2b/editor-de-video（葡语视频剪辑 skill，无 SKILL.md）、cclank/lanshu-sticker-presenter-video（贴纸拼贴主播视频 skill，README 仅徽章图、无成品演示）。
 - **2026-11-17 新建候选、合集型或未提及 Codex 暂缓**：Ginclair-Team/ginhouse-curations（工程 / 设计 / 写作 / 动效 skill 合集）、lokki007/ian-skills（通用 skill 合集）、anhnhh3007-netizen/motion-designer-agent（Claude Code 动效 agent，README 未提及 Codex、无 SKILL.md）。
-- **hotskills.new 线索、无参考图 / 视频暂缓**：abdiraimov-otabek/dashboard-design-skill（创建 2026-10-20，860★，README 全文无任何图片 / 视频）、weibo-job/guagua-animation-skills（创建 2026-11-04，9 个动画 skill，README 无媒体）、kangarooking/design-skills（创建 2026-10-20，README 无媒体）、threerocks/article2media（创建 2026-11-08，428★，README 无图片，B 站链接为示例输入、非成品演示）、AgentsORG/design-engineering（创建 2026-11-10，13 agent 设计工程技能图谱，合集型，README 媒体仅品牌与基准图表）。
+- **hotskills.new 线索、无参考图 / 视频暂缓**：abdiraimov-otabek/dashboard-design-skill（创建 2026-10-20，860★，README 全文无任何图片 / 视频）、weibo-job/guagua-animation-skills（创建 2026-11-04，9 个动画 skill，README 无媒体）、kangarooking/design-skills（创建 2026-10-20，README 无媒体）、threerocks/article2media（创建 2026-11-08，428★，README 无图片，B 站链接为示例输入、非成品演示）。
 - **snaplyze/skills-hub**（创建 2026-11-14）：首个 frontend design skill 仅支持 OpenCode，Codex 支持仅为 Planned，README 仅徽章图、无演示截图，暂不入库。
 - **SorabhGwala/ui-ux-dashboard-skills**（创建 2026-11-14）：UI/UX + 反俗套 + 仪表盘设计 skill 套装，SKILL.md 已核验、提及 Codex，但 README 唯一图片为徽章图、无参考图 / 视频，暂不入库。
 - **M-Umar-khawaja/fyp-video-skill**（创建 2026-11-14）：结课项目报告转展会 / 演示视频 Codex skill，SKILL.md 已核验，但全仓库唯一图片为标题横幅、无成品演示图 / 视频，暂不入库。
@@ -779,6 +865,12 @@
 - **hotskills.dev 线索、未提及 Codex 暂缓**：JDhruv14/line-art-animation（1k★，线条动画）、sloemo01/diorama（Three.js 立体场景）、mankidev/codixel（像素画，Claude Code）、artemnovitckii/claude-animation-skills（Claude Code 动效）、Vibha-Ramprakash/claude-video-effects（Claude talking-head 特效）、mileson/chaojifeng-video-content-creator（中文视频创作）、ItsssssJack/claude-video-2（Claude Code 动效，README 无媒体）、haiderfarooq3/paper-reel（Claude Code 剪纸风短片）、NiazMorshed2007/reanimate（1.8k★，参考还原）、kelano86/what-if-animation（Claude Code / OpenCode）、ocepkejepintu-droid/claude-launch（Claude Code 启动片）、artemnovitckii/claude-editing-skills（Claude Code 口播剪辑）、appariciojunior/video-editor-skills（DaVinci 剪辑，Claude Code）。
 - **hotskills.dev 线索、无参考图 / 视频或超范围暂缓**：Leonxlnx/cook（视觉还原 skill，README 无媒体）、Duoasa/Duoasa-skill（README 仅徽章图、无成品演示）、lowdevco/Clip-Forge（视频剪辑工具，超出设计创作范围）、op7418/guizang-game-skill（3D 动作游戏）、lillyguisnet/sam3-segmentation（图像分割）、patch-gg/anymove（动作捕捉）、daveebbelaar/bama（macOS 应用开发）、ethanplusai/astro-conversion-kit（网站迁移）。
 - **Modern Web Guidance**（GoogleChrome/modern-web-guidance，v1.0 2026-11-10）：Chrome 团队现代 Web 能力指导 skill 包，支持 Codex，但 README 仅 logo / 装饰图标、无成品演示图 / 视频，暂不入库。
+- **2026-11-19 新建候选、无参考图 / 视频暂缓**：dakiemdarktharr/explainer_reels_skill（Codex 解说短视频 skill）、Yu-Jie-Chen/ai-video-cover（视频封面生图 skill）、Jingyu1023/mudi-video-production-skill（单一品牌 Mudi 广告工作流）、AuteoAI/skills（商业 API 工具，需 auteo.ai 账号与积分；README 无媒体）。
+- **2026-11-19 新建候选、未提及 Codex 暂缓**：mchine-ltda/claude-brand-kit（品牌套件 skill）、withloverico/saas-edit（Remotion 宣传片 skill）、Ayinla10/prof-promo-video-pro（动效宣传片 skill）、learneryoyo/editorial-storytelling-ppt（编辑感 PPT 设计 skill，SKILL.md 与参考文档均未提及 Codex）。
+- **2026-11-19 新建候选、合集型或超范围暂缓**：monrap0ssa-beep/codex-design-skills（俄语安装器合集，内含 skill 均已收）、1day0fmylife/pcb-design-emc-skill（PCB 设计）、lehoanganhtai13/archmancer（系统架构）、rahulbsw/snapmaker-u1-skill（3D 打印）、wliffers/allplan-report-design（报告模板）、roooo-798/ai-rap-maker-skill（AI 说唱生成）、bizsrm25-dev/channel-arbitrage-finder（频道选题套利）、Chenhe-Ma/article-to-epub（文章转 EPUB）、daxingcourse/zh-video-kit-builder（做自己内容系统的元 skill）、Sahadat-Hosen-Tuhin/shtuhin（个人作品集，非 skill）。
+- **2026-11-19 新建候选、其他暂缓**：iframefonts/sinqlo-mcp（设计系统 MCP 服务器，未提及 Codex）、ziquan-Wang/multimodal-figure-design（学术 / 论文配图 skill，超范围；与 2026-11-18 暂缓的 academic-figure-design-skill 同口径）。
+- **聚合站线索、未提及 Codex 或无参考图 / 视频暂缓**：Ludi-Herry/desktop-agent-ui（桌面 Agent 应用设计规范，0 处提及 Codex、无媒体）、helloianneo/ian-xhs-carousel（小红书图文排版，明确只写 Claude Code、无媒体）、goufugui615-ui/cosplay-prompt-crafter（Coser 出图提示词，0 处提及 Codex、无媒体）、howseen-ai/claude-motion-design（纯代码动效视频，有 preview.gif 但 0 处提及 Codex）、Leonxlnx/cinetic（电影感 launch film，README 仅品牌 SVG、无实质参考图 / 视频）、Rieranthony/product-film-skill（README 仅 4KB、无媒体、0 处提及 Codex）、lemomo-ai/lemo-opuscar（99 套代码影片风格，README 仅 2 处提及 Codex、定位为 Claude Code 工具，Codex 支持待核验）。
+- **聚合站线索、超范围或无法溯源暂缓**：luccacerfz/character-factory-skills（游戏角色转 Unity 预制体）、Sunwood-ai-labs/hyperframes-motion-reel-skill（与已收 #18 HyperFrames 同家族，不另收）、avivgerz-hue/unslop（已收 #2 unslop 的复刻 / 同名仓库，非原作者）、FRCHN-GSTN/MenulisCep4t（学术文档引擎）、Taste Stack Swiss（tastestack.dev，无 GitHub 原仓库、需注册取私有安装链接，无法溯源）。
 
 ## 发现源（只作线索，不当来源）
 
@@ -804,4 +896,4 @@
 
 ---
 
-*核验日期：2026-11-19。每日定时更新：新增 skill 经核验后入库，0 新增也汇报当日扫描情况。*
+*核验日期：2026-11-20。每日定时更新：新增 skill 经核验后入库，0 新增也汇报当日扫描情况。*

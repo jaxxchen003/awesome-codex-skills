@@ -4,7 +4,7 @@
 > 先聚焦 design，后续再扩到其他方向。
 > 仓库：https://github.com/jaxxchen003/awesome-codex-skills
 
-📊 **收录 skill：98** ｜ 🕐 **最后更新：2026-11-21** ｜ 🤖 每日定时更新 ｜ 🌐 **在线预览站：https://jaxxchen003.github.io/awesome-codex-skills/**
+📊 **收录 skill：104** ｜ 🕐 **最后更新：2026-11-22** ｜ 🤖 每日定时更新 ｜ 🌐 **在线预览站：https://jaxxchen003.github.io/awesome-codex-skills/**
 
 ---
 
@@ -36,14 +36,16 @@
 > 2026-11-20：本轮新增 11 条（#84 vibedesign-skills、#85 hudesign-design-skill、#86 nativetap、#87 markitui、#88 motion-explainer、#89 viewgum-skills，均为 2026-11-19 新建；另补录 5 条：#90 design-engineering、#91 flawless-ui-ux、#92 huashu-motion、#93 live-panel-skill、#94 guizang-product-video-skill）。GitHub Search 本轮 8 次查询共 26 个 2026-11-19 新建候选，核验后 6 条入库；其余 20 条因无参考图 / 视频、合集型、超范围、未提及 Codex 或无 README 暂缓，见“暂不收录”。Reddit 线本轮仍有缺口：www.reddit.com/new RSS 五个分区首轮 429×4 / 404×1，重试一次仍 429×4 / 404×1，未取到帖子列表，本轮 Reddit 覆盖缺失，不编链接。X 线：web search 未发现过去 24 小时内新发布的 design skill 原帖（仅已收条目的 unslop、hallmark 评测与 motion-skill、motion2code 报道，无可追溯原作者的新条目）。skills.sh 首页已取到（200，JS 渲染、静态 HTML 未见新条目）；agentsuses /new 仍 404（motion-graphics 分类页 200，带出 huashu-motion、live-panel-skill、guizang-product-video-skill 三条补录）；open-design.ai 首页已取到（200，未见新条目）；SkillsMP 直连失败（000）、走代理 403，聚合站覆盖有缺口。hotskills.dev/new 已取到（200，页脚日期非新 skill，带出 design-engineering、flawless-ui-ux 两条补录）。abeerkhalique/design-critique-skill 2026-11-20 复查：仓库仍为空（GitHub API 409 Repository is empty），继续暂缓。2026-11-21 复查：README 仍 404，继续暂缓。
 >
 > 2026-11-21：本轮新增 4 条（#95 cutaway-director、#96 talking-head-cards、#97 project-showcase、#98 ll-broll-video，均为 2026-11-20 新建）。GitHub Search 本轮 8 次查询共 32 个 2026-11-20/21 新建候选，核验后 4 条入库；其余 28 条因无参考图 / 视频、合集型、超范围、未提及 Codex 或仅封面图暂缓，见“暂不收录”。Reddit 线本轮仍有缺口：www.reddit.com/new RSS 五个分区首轮 429×3 / 404×2，重试一次仍 429×4 / 404×1，未取到帖子列表，本轮 Reddit 覆盖缺失，不编链接。X 线：web search 未发现过去 24 小时内新发布的 design skill 原帖（仅已收条目的 unslop、motion-skill、motion-design 报道与 agentsuses 动效合集，无可追溯原作者的新条目）。skills.sh 首页已取到（跟随 308 跳转后 915KB，JS 渲染、静态 HTML 未见新条目）；agentsuses /new 仍 404（动效分类页静态 HTML 未见新条目）；open-design.ai 首页已取到（200，未见新条目）；SkillsMP 命中 Cloudflare 质询页，聚合站覆盖有缺口。hotskills.dev/new 已取到（跟随 301 跳转后 347KB，未见设计类新条目；仅 skill-siphon 元 skill 与 MenulisCep4t 学术文档合集）。
+>
+> 2026-11-22：本轮新增 6 条（#99 frontend-design-codex、#100 uidesignupgrade、#101 Video-Template-Motion、#102 animate-visual-motion、#103 ai-video-skills、#104 Previs-Rium，均为 2026-11-21 新建）。GitHub Search 本轮 8 次查询共 21 个 2026-11-21 新建候选，核验后 6 条入库；其余 15 条因无参考图 / 视频、合集型、超范围、未提及 Codex、仅徽章 / 标题横幅图或无 README 暂缓，见“暂不收录”。Reddit 线本轮仍有缺口：www.reddit.com/new RSS 五个分区首轮 404×2 / 429×3，重试一次仍 404×2 / 429×3，未取到帖子列表，本轮 Reddit 覆盖缺失，不编链接。X 线：web search 未发现过去 24 小时内新发布的 design skill 原帖（仅已收条目的 unslop、hallmark 评测与已收 #79 open-3d-skills 报道，无可追溯原作者的新条目）；另有 kieranklaassen 2026-11-18 的 SVG & 3D Design Codex 插件帖与 earthtojake/text-to-cad（2026-04-22 创建，27k★）两条线索，均因未定位到公开原仓库 / 超出范围暂缓，见“暂不收录”。skills.sh 首页已取到（200，915KB，JS 渲染、静态 HTML 未见新条目）；agentsuses /new 仍 404；open-design.ai 首页已取到（200，2026-11-21 字样仅为黑五 campaign 横幅，未见新条目）；SkillsMP 返回 403，聚合站覆盖有缺口。hotskills.dev/new 已取到（200，347KB，未见设计类新条目）。abeerkhalique/design-critique-skill 2026-11-22 复查：README 仍 404，继续暂缓。
 
 ---
 
 ## 📑 目录
 
-- [🌐 网页设计](#-网页设计)（47）
+- [🌐 网页设计](#-网页设计)（49）
 - [🖼️ 生图](#️-生图)（9）
-- [🎬 生视频](#-生视频)（42）
+- [🎬 生视频](#-生视频)（46）
 - [🤝 参与方式](#-参与方式)
 - [⚠️ 免责声明](#️-免责声明)
 
@@ -402,6 +404,21 @@
 - **参考图**：极简示例动态预览 https://raw.githubusercontent.com/ythx-101/live-panel-skill/main/examples/minimal/preview.webp ；另有 agent 架构、Airbnb、漏斗等 8 个示例预览
 - **类型**：代码生成（JSON 配置渲染 MP4/HTML 动态架构图）
 - **备注**：补录：2026-10-03 创建，本轮由 agentsuses 动效合集线索追溯到原作者后入库。
+
+### 99. frontend-design-codex — 首屏比较 + 场景交互的网页设计 skill 🟡
+- **作者**：wbdolf
+- **仓库**：https://github.com/wbdolf/frontend-design-codex（0★，许可证未声明，2026-11-22 核验；创建 2026-11-21；`skills/frontend-design-fusion/SKILL.md`）
+- **一句话**：面向 Agent Skills 的网页设计 skill：比较三版首屏方案、设计场景交互、处理响应式布局，再用浏览器核对实际效果，附互动剧场《月亮失物处》，明确支持 Codex。
+- **参考视频**：桌面端演示 https://wbdolf.github.io/frontend-design-codex/captures/loge-passage-desktop.mp4 ；移动端演示 https://wbdolf.github.io/frontend-design-codex/captures/loge-passage-mobile.mp4 ；在线试演：https://wbdolf.github.io/frontend-design-codex/
+- **类型**：代码生成
+- **备注**：skill 名为 frontend-design-fusion。
+
+### 100. uidesignupgrade — UX 法则 + 动效升级已有界面 🟡
+- **作者**：lllons
+- **仓库**：https://github.com/lllons/uidesignupgrade（1★，Apache-2.0，2026-11-22 核验；创建 2026-11-21；根目录 SKILL.md）
+- **一句话**：用 UX 法则、动效、排版、配色与反俗套原则升级已有应用或网站 UI：加购动效、缓动、排版、主题切换等逐项演示，附前后对比，支持 Codex。
+- **参考图**：加购动效演示 https://raw.githubusercontent.com/lllons/uidesignupgrade/main/assets/add-to-cart.gif ；另有 20+ 原则演示 GIF（缓动、跟随、排版、主题切换等）
+- **类型**：代码生成（HTML/CSS/JS 动效）
 
 ---
 
@@ -807,6 +824,38 @@
 - **类型**：模型生图（Codex 内置生图生成静态帧表，本地脚本导出 GIF / MP4）
 - **备注**：仓库无 README.md，skill 与参考图以 SKILL.md 与 assets/ 为准。
 
+### 101. Video-Template-Motion — 浏览器动效设计师：开场 / 宣传片 / 解说视频 🟡
+- **作者**：ZuanCrisp
+- **仓库**：https://github.com/ZuanCrisp/Video-Template-Motion（0★，MIT，2026-11-22 核验；创建 2026-11-21；根目录 SKILL.md）
+- **一句话**：把 agent 变成动效设计师：开场、宣传片、产品演示、动态排版与解说视频都做成单个可播放的 index.html（像视频、不像幻灯片），含 12 种风格组合画廊，支持 Codex。
+- **参考图**：风格画廊总览 https://raw.githubusercontent.com/ZuanCrisp/Video-Template-Motion/main/docs/gallery/hero.jpg ；另有 12 张风格示例图
+- **类型**：代码生成（HTML+CSS/GSAP/Three.js 浏览器动效，可导出 MP4）
+- **备注**：README 为印尼语；skill 名为 bang-motion。
+
+### 102. animate-visual-motion — 55 种风格的纯代码程序化动画视频 🟡
+- **作者**：frapay
+- **仓库**：https://github.com/frapay/animate-visual-motion（0★，MIT，2026-11-22 核验；创建 2026-11-21；`plugins/animate-visual-motion/skills/animate-visual-motion/SKILL.md`）
+- **一句话**：纯代码做程序化动画视频：55 种风格的解说、历史、小故事或产品发布短片，单 canvas 确定性逐帧绘制，支持 Codex 等多 agent。
+- **参考图**：55 种风格总览 https://raw.githubusercontent.com/frapay/animate-visual-motion/main/docs/styles.jpg
+- **类型**：代码生成（程序化 Canvas 动画，不调视频模型）
+- **备注**：fork 自 cth9191/animate（原作仅支持 Claude Code）；本仓库补 Codex 等多 agent 安装。
+
+### 103. ai-video-skills — 5 个视频剪辑 skill：特效 / 倒计时 / 纪录解说 / 切片 / 字幕 🟡
+- **作者**：kavitarak（Hemant Tarak，kavi.onlines）
+- **仓库**：https://github.com/kavitarak/ai-video-skills（0★，MIT，2026-11-22 核验；创建 2026-11-21；`.agents/skills/*/SKILL.md`，5 个 skill）
+- **一句话**：5 个视频剪辑 skill：51 种人脸追踪特效、印地语倒计时 Reel、档案风纪录解说、长视频切 9:16 病毒片段、印地语 + 英语字幕烧录，支持 Codex。
+- **参考图**：Codex 演示截图 https://raw.githubusercontent.com/kavitarak/ai-video-skills/main/assets/demo-codex.png ；特效画廊 https://raw.githubusercontent.com/kavitarak/ai-video-skills/main/assets/effects-gallery.png
+- **类型**：代码生成（Python/ffmpeg/HyperFrames 剪辑，Whisper 离线字幕；不调视频生成模型）
+- **备注**：合集型仓库（5 个 skill），按本库既往口径以单个条目收录。
+
+### 104. Previs-Rium — 视频生成前先在 Blender 里做 3D 预演 🟡
+- **作者**：contentriumkorea
+- **仓库**：https://github.com/contentriumkorea/Previs-Rium（0★，许可证未声明，2026-11-22 核验；创建 2026-11-21；`previs-rium/SKILL.md`）
+- **一句话**：视频生成前先在 Blender 里做 3D 预演：把原视频的机位、主体位置与剪辑点搬进 Blender 预演，再交 Seedance 提示词出片，支持 Codex。
+- **参考图**：分镜示例帧 https://raw.githubusercontent.com/contentriumkorea/Previs-Rium/main/docs/media/sample-frames.jpg
+- **类型**：代码生成（Blender 3D 预演）+ 模型生成（Seedance 提示词交接出片）
+- **备注**：README 为韩语；需 Blender 4.2+、FFmpeg、Python 3。
+
 ---
 
 ## 暂不收录（已查到，缺源头或未核验）
@@ -851,7 +900,7 @@
 - **gollodev/onboarding-paywall-designs**（创建 2026-11-12）：应用 onboarding / 订阅付费墙设计图（PNG）生成 skill，README 含示例图，但仅 Claude Code / claude.ai / Copilot、未提及 Codex，暂不入库。
 - **khizerahmadchohan/elite-design-director**（创建 2026-11-12）：Claude Code 网页设计 skill，README 含示例图，但未提及 Codex，暂不入库。
 - **efalov/super-design**（创建 2026-11-12）：Claude Code 前端设计 skill，有 SKILL.md，但仓库无 README、页面全文未提及 Codex，暂不入库。
-- **abeerkhalique/design-critique-skill**（创建 2026-11-12）：仓库无 README（main/master 均 404），内容未核验；2026-11-18 复查仍无 README，继续暂缓。2026-11-20 复查：仓库仍为空（GitHub API 409 Repository is empty），继续暂缓。2026-11-21 复查：README 仍 404，继续暂缓。
+- **abeerkhalique/design-critique-skill**（创建 2026-11-12）：仓库无 README（main/master 均 404），内容未核验；2026-11-18 复查仍无 README，继续暂缓。2026-11-20 复查：仓库仍为空（GitHub API 409 Repository is empty），继续暂缓。2026-11-21 复查：README 仍 404，继续暂缓。2026-11-22 复查：README 仍 404，继续暂缓。
 - **2026-11-17 新建候选、无参考图 / 视频暂缓**：Melvynx/ai-design-pro（法语 AI 设计培训 skill）、connectjeff/learning-design（教学内容设计 skill）、jwexler10/apple-skill（Apple 风格产品设计 skill）、lukelul/video-production-skills（YouTube / Shorts 视频制作 skill 合集）、monohoshi1991/thai-rules-horror-video-skills（泰式恐怖规则短视频 skill，README 仅 853 字）、wildmai/video-skills（视频创作工具箱合集）、gnipbao/rural-cat-video-skill（田园双猫短片 skill）、yuyuexiangshou-rgb/pendulum-beat-video（钟摆卡点成片 skill）、igorcacerez/grok-imagine-video-director（Grok Imagine 提示词 skill，无 SKILL.md）、ricka2b/editor-de-video（葡语视频剪辑 skill，无 SKILL.md）、cclank/lanshu-sticker-presenter-video（贴纸拼贴主播视频 skill，README 仅徽章图、无成品演示）。
 - **2026-11-17 新建候选、合集型或未提及 Codex 暂缓**：Ginclair-Team/ginhouse-curations（工程 / 设计 / 写作 / 动效 skill 合集）、lokki007/ian-skills（通用 skill 合集）、anhnhh3007-netizen/motion-designer-agent（Claude Code 动效 agent，README 未提及 Codex、无 SKILL.md）。
 - **hotskills.new 线索、无参考图 / 视频暂缓**：abdiraimov-otabek/dashboard-design-skill（创建 2026-10-20，860★，README 全文无任何图片 / 视频）、weibo-job/guagua-animation-skills（创建 2026-11-04，9 个动画 skill，README 无媒体）、kangarooking/design-skills（创建 2026-10-20，README 无媒体）、threerocks/article2media（创建 2026-11-08，428★，README 无图片，B 站链接为示例输入、非成品演示）。
@@ -910,6 +959,11 @@
 - **2026-11-20 新建候选、仅封面图暂缓**：davidhielo91/hielocode-video（西语视频剪辑 Codex skill，README 唯一图片为封面插画、无成品演示）。
 - **2026-11-20 新建候选、合集型或超范围暂缓**：Amakora-Group/amakora-design-references-and-skills（设计参考资料合集，无 SKILL.md）、earlylore/earlylore-mcp（产品调研 MCP）、q250111061-ops/nlsy77-video-dedup-skill（视频去重过原创）、2005boobah-cmd/atrxyns-music-skills（Suno 音乐创作插件）、FyLexe123/Claude-Editing-Skill-V7.1（Claude 剪辑 skill，README 仅 378 字）、Icar6618/my-vacancies（求职追踪）、heyiweiheyi/welearn-extract（课程资料提取）。
 - **hotskills.dev/new 线索、超范围暂缓**：JL-GUO/skill-siphon（从 skill 提炼学习资料的元 skill）、FRCHN-GSTN/MenulisCep4t（印尼学术文档引擎，含 laporan-generator / naskah-id / humanizer 三仓库）。
+- **2026-11-21 新建候选、无参考图 / 视频暂缓**：rainp651-ux/tower-defense-creative-director（塔防游戏设计 Codex skill，仓库无 README）、saizul/api-design-skills（API 设计 skill，超出网页设计 / 生图 / 生视频范围、无媒体）、NeKeR53/app-design（React 设计系统插件集，无媒体）、OnurOzkanApp/skills（个人 agent 工作流合集，非设计向、无媒体）、am-523/autovibeuicraft（参考图转设计系统 skill，无媒体）、Vince9933/vinceAI（中文口播剪辑 Codex skill，README 仅 636 字、无媒体）、santoshbpathak/ai-system-design（系统设计 skill，超范围、无媒体）、pinkroosterai/PinkRoosterTerminalUx（终端 UI 设计 skill，唯一图片为 logo、无成品演示）、bysaneera/by-design（社交媒体平面设计 Claude skill，0 处提及 Codex、无媒体）、FrancescoSaverioZuppichini/skills（ComfyUI 视频生成等 skill 合集，无媒体）。
+- **2026-11-21 新建候选、未提及 Codex 暂缓**：KenshienAlao/apple-design-skill（Apple 风格 UI skill，MIT，README 与 SKILL.md 均 0 处提及 Codex；有 6 张 Showcase 截图）、panyuti-ai/anti-ai-slop-design（Claude 反俗套 UI / 幻灯片 / 动效 skill，0 处提及 Codex、无媒体）、jutsuhq/reverse-niche-skill（TikTok / YouTube 选题分析 skill，超范围）。
+- **2026-11-21 新建候选、仅徽章 / 标题横幅图暂缓**：BMQ-1/feelcraft（设计工程 skill，MIT，提及 Codex，全仓库图片仅 logo 与分隔线 SVG、无成品演示）。
+- **2026-11-21 新建候选、超范围暂缓**：whyashthakker/video-intelligence（视频理解 / CCTV 监控 skill，非视频创作）。
+- **X 线索暂缓**：earthtojake/text-to-cad（2026-04-22 创建，27k★，MIT，CAD 建模插件，属工程制造 CAD、超出网页设计 / 生图 / 生视频范围）；kieranklaassen 的 SVG & 3D Design Codex 插件（2026-11-18 X 原帖，GitHub Search 无匹配仓库，未定位到公开原仓库与 SKILL.md，无法溯源入库）。
 
 ## 发现源（只作线索，不当来源）
 
@@ -935,4 +989,4 @@
 
 ---
 
-*核验日期：2026-11-21。每日定时更新：新增 skill 经核验后入库，0 新增也汇报当日扫描情况。*
+*核验日期：2026-11-22。每日定时更新：新增 skill 经核验后入库，0 新增也汇报当日扫描情况。*

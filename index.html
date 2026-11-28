@@ -2126,7 +2126,8 @@ function openModal(card){
   };
   document.getElementById('modalBackdrop').classList.add('open');
   document.body.style.overflow='hidden';
-  document.querySelector('.modal-actions .close-btn').focus();
+  var _x=document.querySelector('.modal-close-x');
+  if(_x){try{_x.focus({preventScroll:true});}catch(e){_x.focus();}}
 }
 function fallbackCopy(text,done){
   const ta=document.createElement('textarea');ta.value=text;ta.style.position='fixed';ta.style.opacity='0';
